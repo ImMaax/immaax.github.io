@@ -1,13 +1,17 @@
 body {
   font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text,
                Times New Roman, serif;
-  font-style: italic;
   color: #343f50;
+  background-color: #fbfcf8;
 }
 
 #main {
   margin: 0 auto;
   max-width: 800px;
+}
+
+header {
+  font-style: italic;
 }
 
 h1,
@@ -28,8 +32,14 @@ h2 {
 hr {
   border: 1px solid #d1d7e1;
   margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 footer {
   text-align: center;
+}
+
+a:link,
+a:visited {
+  color: #8596b0;
 }
