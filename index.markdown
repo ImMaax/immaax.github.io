@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+description: Welcome to www.goetz.pro
 ---
 Welcome!
 

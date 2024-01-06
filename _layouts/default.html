@@ -4,8 +4,16 @@
     <title>{{ page.title }} - Maximilian Götz</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.description }}">
+    <meta property="og:site_name" content="Maximilian Götz">
+    <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:title" content="{{ page.title }} - Maximilian Götz">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
     <link rel="stylesheet" href="/assets/css/style.css?v=2">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="alternate" type="application/atom+xml" href="/feed.xml"
+          title="Feed">
   </head>
   <body>
     <div id="main">
