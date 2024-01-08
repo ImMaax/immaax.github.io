@@ -6,3 +6,4 @@ url: "https://goetz.pro"
 permalink: "/articles/:year/:month/:day/:title.html"
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
