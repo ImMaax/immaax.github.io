@@ -14,16 +14,25 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="alternate" type="application/atom+xml" href="/feed.xml"
           title="Feed">
+    <script src="/assets/js/main.js?v=1"></script>
   </head>
   <body>
     <div id="main">
       <header>
-        <h1>Maximilian Götz</h1>
-        <h2>www.goetz.pro</h2>
+        <h1><a href="/">Maximilian Götz</a></h1>
+        <h2><a href="/">www.goetz.pro</a></h2>
         <hr>
       </header>
 
       <main>
+        <noscript class="info">
+          <p>It appears your browser does not support JavaScript.</p>
+          <p>
+            Although JavaScript is not strictly necessary to use this site, it's
+            recommended to enable it anyway in order for some features to work.
+          </p>
+        </noscript>
+
         <h3>{{ page.title }}</h3>
         {{ content }}
         <hr>
