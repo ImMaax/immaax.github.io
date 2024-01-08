@@ -1,6 +1,8 @@
 title: Maximilian Götz
+author: Maximilian Götz
 description: The homepage of Maximilian Götz
 baseurl: ""
 url: "https://goetz.pro"
+permalink: "/articles/:year/:month/:day/:title.html"
 plugins:
   - jekyll-feed

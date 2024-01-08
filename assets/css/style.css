@@ -10,7 +10,8 @@ body {
   max-width: 800px;
 }
 
-header {
+header,
+.info {
   font-style: italic;
 }
 
@@ -22,6 +23,14 @@ h2 {
 
 h1 {
   font-variant: small-caps;
+}
+
+h1 a:link,
+h1 a:visited,
+h2 a:link,
+h2 a:visited {
+  color: inherit;
+  text-decoration: none;
 }
 
 h2 {
@@ -41,5 +50,9 @@ footer {
 
 a:link,
 a:visited {
+  color: #8596b0;
+}
+
+.info {
   color: #8596b0;
 }
