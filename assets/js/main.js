@@ -1,3 +1,3 @@
-function decodeString(input, element) {
-  element.innerText = atob(input)
+function decodeAndSend(input) {
+  window.location.href = `mailto:${atob(input)}`
 }
