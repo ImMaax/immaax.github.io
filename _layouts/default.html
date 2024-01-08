@@ -10,10 +10,12 @@
     <meta property="og:title" content="{{ page.title }} - Maximilian Götz">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
-    <link rel="stylesheet" href="/assets/css/style.css?v=2">
+    <link rel="stylesheet" href="/assets/css/style.css?v=3">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="alternate" type="application/atom+xml" href="/feed.xml"
           title="Feed">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml"
+          title="Sitemap">
     <script src="/assets/js/main.js?v=1"></script>
   </head>
   <body>
@@ -21,7 +23,12 @@
       <header>
         <h1><a href="/">Maximilian Götz</a></h1>
         <h2><a href="/">www.goetz.pro</a></h2>
-        <hr>
+        <hr class="margin-sm">
+        <nav>
+          <a href="/">Home</a> &bull;
+          <a href="/articles/">Articles</a>
+        </nav>
+        <hr class="margin-sm">
       </header>
 
       <main>
