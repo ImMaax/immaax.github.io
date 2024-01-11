@@ -10,7 +10,7 @@
     <meta property="og:title" content="{{ page.title }} - Maximilian Götz">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
-    <link rel="stylesheet" href="/assets/css/style.css?v=3">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="alternate" type="application/atom+xml" href="/feed.xml"
           title="Feed">
@@ -26,6 +26,7 @@
         <hr class="margin-sm">
         <nav>
           <a href="/">Home</a> &bull;
+          <a href="/photos/">Photos</a> &bull;
           <a href="/articles/">Articles</a>
         </nav>
         <hr class="margin-sm">
@@ -40,7 +41,6 @@
           </p>
         </noscript>
 
-        <h3>{{ page.title }}</h3>
         {{ content }}
         <hr>
       </main>

@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<br>
+<div class="photo">
+  <img src="/assets/img/photos/{{ page.photo }}" alt="{{ page.description }}">
+  <h3>{{ page.title }}</h3>
+</div>
+
+<br>
+<div class="table-cont">
+  <table>
+    <tr>
+      <th>Camera</th>
+      <th>Lens</th>
+      <th>Film</th>
+      <th>Location</th>
+      <th>Date taken</th>
+    </tr>
+    <tr>
+      <td>{{ page.camera }}</td>
+      <td>{{ page.lens }}</td>
+      <td>{{ page.film }}</td>
+      <td>{{ page.location }}</td>
+      <td>{{ page.taken | date: "%-d %B %Y" }}</td>
+    </tr>
+  </table>
+</div>
+
+{{ content }}
+
+{% include contact.html %}
