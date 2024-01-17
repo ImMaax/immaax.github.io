@@ -1,0 +1,15 @@
+---
+layout: photo
+title: Edersee
+description: Edersee
+
+camera: Sony A7
+lens: Cosina MC Cosinon-W 28mm f2
+film: Digital
+location: Edersee, Germany
+taken: 2023-08-06
+
+photo: DSC02680.jpg
+---
+
+Took this one right after it stopped raining, you can see the sky clearing up.
