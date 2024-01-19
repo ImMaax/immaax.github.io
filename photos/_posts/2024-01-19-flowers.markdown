@@ -1,0 +1,13 @@
+---
+layout: photo
+title: Flowers
+description: Flowers
+
+camera: Sony A7
+lens: Minolta MC Rokkor-PG 50mm f1.4
+film: Digital
+location: Baunatal, Germany
+taken: 2023-04-30
+
+photo: DSC02398.jpg
+---
