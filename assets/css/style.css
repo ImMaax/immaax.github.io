@@ -45,6 +45,19 @@ blockquote {
   padding-left: 1.5em;
 }
 
+pre,
+code {
+  font-family: Andale Mono, Consolas, Lucida Sans Typewriter,
+               Lucida Console, Courier New, monospace;
+}
+
+pre {
+  padding: 1.5em;
+  background-color: #002b36;
+  color: #799294;
+  overflow-x: scroll;
+}
+
 footer,
 nav,
 h1,
