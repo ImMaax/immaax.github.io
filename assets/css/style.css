@@ -118,3 +118,10 @@ th, td {
 td {
   text-align: center;
 }
+
+.copybtn {
+  display: block;
+  text-align: right;
+  margin-top: -15px;
+  font-size: 12px;
+}
