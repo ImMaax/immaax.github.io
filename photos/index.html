@@ -7,14 +7,13 @@ description: Photos at www.goetz.pro
 <h3>Photos</h3>
 
 {% if site.categories.photos and site.categories.photos.size != 0 %}
-  <ul>
+  <div id="photo-grid">
     {% for post in site.categories.photos %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <span class="info">({{ post.date | date: "%-d %B %Y" }})</span>
-      </li>
+      <a href="{{ post.url }}">
+        <img src="/assets/img/photos/{{ post.photo }}" class="photo-grid-img" alt="{{ post.description }}" title="{{ post.description }}">
+      </a>
     {% endfor %}
-  </ul>
+  </div>
 {% else %}
   <p class="info">No photos to display.</p>
 {% endif %}

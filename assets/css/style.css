@@ -125,3 +125,28 @@ td {
   margin-top: -15px;
   font-size: 12px;
 }
+
+#photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.photo-grid-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 450px) {
+  #photo-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 350px) {
+  #photo-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
