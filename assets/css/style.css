@@ -139,6 +139,10 @@ td {
   display: block;
 }
 
+#search-field {
+  width: 100%;
+}
+
 @media (max-width: 450px) {
   #photo-grid {
     grid-template-columns: 1fr 1fr 1fr;
