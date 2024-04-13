@@ -2,6 +2,6 @@ User-agent: ia_archiver
 Disallow: /
 
 User-agent: *
-Disallow:
+Disallow: /search/search.json
 
 Sitemap: https://goetz.pro/sitemap.xml

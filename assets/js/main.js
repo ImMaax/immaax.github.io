@@ -31,7 +31,7 @@ class SearchField {
   }
 
   async #getUrls() {
-    let res = await fetch("/search.json")
+    let res = await fetch("/search/search.json")
     return res.json()
   }
 
