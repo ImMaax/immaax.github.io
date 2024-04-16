@@ -1,11 +1,12 @@
-// Global Functions
-// =============================================================================
-function decodeAndSend(input) {
-  window.location.href = `mailto:${atob(input)}`
-}
-
 // Classes
 // =============================================================================
+class Helpers {
+  static sendMessage(b64Address, subject) {
+    const uri = `mailto:${atob(b64Address)}?subject=${encodeURI(subject)}`
+    window.location.href = uri
+  }
+}
+
 class SearchField {
   #input
   #output
