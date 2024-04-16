@@ -1,0 +1,17 @@
+<input type="search" id="search-field" placeholder="Initializing..." disabled>
+
+<div id="search-results">
+  <p class="info">
+    Search this entire website by typing into the search form above. Results
+    will show up as you type.
+  </p>
+</div>
+
+<script>
+  (async function() {
+    const searchIn  = document.getElementById("search-field")
+    const searchOut = document.getElementById("search-results")
+    const sf = new SearchField(searchIn, searchOut)
+    await sf.init()
+  })()
+</script>
