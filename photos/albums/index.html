@@ -1,0 +1,24 @@
+---
+layout: default
+title: Albums
+description: My photographic scrapbook, organized into collections
+---
+
+<h3>Albums</h3>
+
+<p>In order to maintain an overview of all the photos I publish on here, I
+loosely organized them into albums.</p>
+<p>I update the albums you see here whenever I upload new photos.</p>
+
+<div id="photo-grid">
+  {% for page in site.pages %}
+    {% if page.layout == "album" %}
+      <div class="photo">
+        <a href="{{ page.url }}">
+          <img src="/assets/img/photos/{{ page.photo }}" class="photo-grid-img" alt="{{ page.description }}" title="{{ page.description }}">
+        </a>
+        <h3>{{ page.title }}</h3>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>

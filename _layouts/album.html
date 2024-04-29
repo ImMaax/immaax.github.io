@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<h3>{{ page.title }}</h3>
+
+{{ content }}
+
+<div id="photo-grid">
+  {% for post in page.included %}
+    {% assign photo = site.posts | where: "title", post | first %}
+    <a href="{{ photo.url }}">
+      <img src="/assets/img/photos/{{ photo.photo }}" alt="{{ photo.description }}" title="{{ photo.description }}" class="photo-grid-img">
+    </a>
+  {% endfor %}
+</div>
