@@ -1,0 +1,72 @@
+#!/bin/bash
+IMG_PATH="$1"
+IMG_BASE="$(basename $IMG_PATH)"
+
+usage() {
+  echo "Usage: mkphoto IMAGE"
+  exit 1
+}
+
+missing() {
+  echo "Software missing: $1"
+  exit 1
+}
+
+test_env() {
+  if [ -z "${IMG_PATH-}" ]; then
+    usage
+  fi
+
+  CMDS=( magick exiftool cat convert )
+
+  for CMD in "${CMDS[@]}"; do
+    if ! command -v "$CMD" &> /dev/null; then
+      missing "$CMD"
+    fi
+  done
+}
+
+process_image() {
+  L_OR_P=`convert $1 -format "%[fx:(w/h>1)?1:0]" info:`
+  if [ $L_OR_P -eq 1 ]; then
+    magick $1 -quality 65 -resize 600x $2
+  else
+    magick $1 -quality 65 -resize x600 $2
+  fi
+
+  exiftool -overwrite_original -all= $2
+}
+
+markdown() {
+  read -p "1/9 - Page name> " PAGE
+  read -p "2/9 - Title> " TITLE
+  read -p "3/9 - Description> " DESC
+  read -p "4/9 - Camera> " CAM
+  read -p "5/9 - Lens> " LENS
+  read -p "6/9 - Film> " FILM
+  read -p "7/9 - Location> " LOC
+  read -p "8/9 - Date taken> " DATET
+  read -p "9/9 - Further comments> " COMM
+
+  cat >"photos/_posts/$PAGE.markdown" <<EOF
+---
+layout: photo
+title: ${TITLE}
+description: ${DESC}
+
+camera: ${CAM}
+lens: ${LENS}
+film: ${FILM}
+location: ${LOC}
+taken: ${DATET}
+
+photo: ${IMG_BASE}
+---
+
+${COMM}
+EOF
+}
+
+test_env
+markdown
+process_image $1 "assets/img/photos/${IMG_BASE}"

@@ -7,3 +7,5 @@ permalink: "/:categories/:year/:month/:day/:title"
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+exclude:
+  - /bin
