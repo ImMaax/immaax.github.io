@@ -1,0 +1,18 @@
+---
+layout: photo
+title: Herkules
+description: Herkules
+
+camera: Nikon F3
+lens: AF Nikkor 35-105mm f3.5-4.5
+film: Kodak Ektachrome Plus 100 (135)
+location: Kassel, Germany
+taken: March 2024
+
+photo: herkules.jpg
+---
+
+Cropped and converted to b/w from a Kodak Ektachrome Plus 100 35mm transparency.
+
+The resolution is terrible, the grain is very visible. Certainly adds to the
+mood, I think.
