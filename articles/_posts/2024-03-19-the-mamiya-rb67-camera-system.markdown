@@ -13,6 +13,11 @@ It is very versatile and allows you to build your camera to fit every situation.
 This article aims to give a general overview of the system and to discuss my
 experiences with and thoughts on it.
 
+<div class="photo">
+  <img src="/assets/img/support/me-metering-light.jpg" alt="Me, metering light">
+  <p>Me, metering light for a shot with my RB67 Pro S in the background</p>
+</div>
+
 ### Overview
 
 As I just mentioned, the system allows for heavy customization. The bodies take
