@@ -119,6 +119,10 @@ td {
   text-align: center;
 }
 
+ul {
+  list-style-image: url(/assets/img/list-icon.svg);
+}
+
 .copybtn {
   display: block;
   text-align: right;
