@@ -15,7 +15,9 @@ be found on my Flickr and Instagram pages as well.</p>
   <div id="photo-grid">
     {% for post in site.categories.photos %}
       <a href="{{ post.url }}">
-        <img src="/assets/img/photos/{{ post.photo }}" class="photo-grid-img" alt="{{ post.description }}" title="{{ post.description }}">
+        <img src="/assets/img/photos/{{ post.photo }}" class="photo-grid-img"
+             alt="{{ post.description }}" title="{{ post.description }}"
+             loading="lazy">
       </a>
     {% endfor %}
   </div>
