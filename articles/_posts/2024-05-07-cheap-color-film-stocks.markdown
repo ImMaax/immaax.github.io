@@ -73,6 +73,11 @@ bit less warm and has a narrower exposure latitude, rendering it a bit more
 contrasty as well. I can hardly make out a difference but I also did not do
 side-by-side comparisons.
 
+<div class="photo">
+  <img src="/assets/img/support/colorplus.jpg" alt="Kodak ColorPlus 200 Sample">
+  <p><b>Kodak ColorPlus 200</b></p>
+</div>
+
 Really, the differences are negligible in my opinion. I have shot both and the
 results looked very, very similar.
 Some sources claim that ColorPlus is based on a 1970s emulsion whereas Gold is
