@@ -6,6 +6,7 @@ photo: autumn-leaves.jpg
 included:
   - "Autumn Leaves"
   - "Reed and Leaves"
+  - "Northern Lights 1"
 ---
 
 Everything about patterns, shapes and colors, really. Mainly contains detail
