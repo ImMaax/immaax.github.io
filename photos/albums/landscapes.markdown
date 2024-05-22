@@ -4,6 +4,7 @@ title: Landscapes
 description: Photos of landscapes
 photo: DSC02680.jpg
 included:
+  - "Fields of Gold"
   - "Edersee"
   - "Mountain and Bridge"
   - "Sand-scape"

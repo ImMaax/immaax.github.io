@@ -2,11 +2,12 @@
 layout: album
 title: Urban and Architecture
 description: Urban and Architecture
-photo: urban-night-lights.jpg
+photo: frankfurt-highrises.jpg
 included:
   - "Frauenkirche, Dresden"
   - "Lantern at Wilhelmshöhe"
   - "Frankfurt a. M. Skyline"
+  - "Frankfurt Highrises"
   - "Herkules"
   - "Urban Night Lights"
 ---
