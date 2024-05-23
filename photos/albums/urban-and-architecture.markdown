@@ -10,6 +10,7 @@ included:
   - "Frankfurt Highrises"
   - "Herkules"
   - "Urban Night Lights"
+  - "Yellow"
 ---
 
 Photos taken in cities, mostly containing architecture.

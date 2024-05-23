@@ -9,6 +9,7 @@ included:
   - "Northern Lights 1"
   - "Yellow Petals"
   - "Flowers"
+  - "Yellow"
 ---
 
 Everything about patterns, shapes and colors, really. Mainly contains detail
