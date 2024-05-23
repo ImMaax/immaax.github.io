@@ -20,6 +20,6 @@ On here, you can
 I have profiles on various social media sites. If you are interested, have a
 look below.
 
-<div class="photo">
-  <img src="/assets/img/support/me-metering-light.jpg" alt="Me, metering light">
+<div class="photo-container">
+  <img src="/assets/img/support/me-metering-light.jpg" alt="Me, metering light" class="photo">
 </div>

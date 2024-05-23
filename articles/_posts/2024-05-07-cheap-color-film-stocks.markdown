@@ -47,12 +47,12 @@ while UltraMax is more commonly seen as 24 frame rolls. UltraMax costs a bit
 more, typically about 1€, even though it has considerably less frames. Gold is
 also commonly available in packs of three for about 20€.
 
-<div class="photo">
-  <img src="/assets/img/support/gold.jpg" alt="Kodak Gold 200 Sample">
+<div class="photo-container">
+  <img class="photo" src="/assets/img/support/gold.jpg" alt="Kodak Gold 200 Sample">
   <p><b>Kodak Gold 200</b></p>
 </div><br>
-<div class="photo">
-  <img src="/assets/img/support/ultramax.jpg" alt="Kodak UltraMax 400 Sample">
+<div class="photo-container">
+  <img class="photo" src="/assets/img/support/ultramax.jpg" alt="Kodak UltraMax 400 Sample">
   <p><b>Kodak UltraMax 400</b></p>
 </div>
 
@@ -73,8 +73,8 @@ bit less warm and has a narrower exposure latitude, rendering it a bit more
 contrasty as well. I can hardly make out a difference but I also did not do
 side-by-side comparisons.
 
-<div class="photo">
-  <img src="/assets/img/support/colorplus.jpg" alt="Kodak ColorPlus 200 Sample">
+<div class="photo-container">
+  <img class="photo" src="/assets/img/support/colorplus.jpg" alt="Kodak ColorPlus 200 Sample">
   <p><b>Kodak ColorPlus 200</b></p>
 </div>
 
@@ -91,8 +91,8 @@ which I shot a lot of when I first started with film, had to go. The only two
 budget Fuji films remaining are the blandly named _Fujifilm 200_ and _Fujifilm
 400_.
 
-<div class="photo">
-  <img src="/assets/img/support/superia-x-tra-400.jpg" alt="Fujicolor Superia X-Tra 400 Sample">
+<div class="photo-container">
+  <img class="photo" src="/assets/img/support/superia-x-tra-400.jpg" alt="Fujicolor Superia X-Tra 400 Sample">
   <p><b>Fujicolor Superia X-Tra 400</b></p>
   <p>One should notice a stark difference in colors to the Kodak films above</p>
 </div>
@@ -115,12 +115,12 @@ are in production anymore. This is a shame as they yielded excellent results at
 fairly low prices. Only professional-grade slide films are available these days
 and they cost a lot.
 
-<div class="photo">
-  <img src="/assets/img/support/elitechrome-100.jpg" alt="Kodak Elitechrome 100 Sample">
+<div class="photo-container">
+  <img class="photo" src="/assets/img/support/elitechrome-100.jpg" alt="Kodak Elitechrome 100 Sample">
   <p><b>Kodak Elitechrome 100</b></p>
 </div><br>
-<div class="photo">
-  <img src="/assets/img/support/sensia-ii-100.jpg" alt="Fujichrome Sensia II 100 Sample">
+<div class="photo-container">
+  <img class="photo" src="/assets/img/support/sensia-ii-100.jpg" alt="Fujichrome Sensia II 100 Sample">
   <p><b>Fujichrome Sensia II 100</b></p>
 </div>
 

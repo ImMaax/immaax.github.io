@@ -72,21 +72,21 @@ Depending on how strong the color shift is, it might be corrected digitally in
 post.
 
 <div id="photo-grid">
-  <div class="photo">
+  <div class="photo-container">
     <a href="/assets/img/support/sensia-ii-100.jpg">
-      <img src="/assets/img/support/sensia-ii-100.jpg" alt="Sensia II 100">
+      <img class="photo" src="/assets/img/support/sensia-ii-100.jpg" alt="Sensia II 100">
     </a>
     <p>Example of well-stored, expired film</p>
   </div>
-  <div class="photo">
+  <div class="photo-container">
     <a href="/assets/img/support/sensia-200-original.jpg">
-      <img src="/assets/img/support/sensia-200-original.jpg" alt="Sensia 200">
+      <img class="photo" src="/assets/img/support/sensia-200-original.jpg" alt="Sensia 200">
     </a>
     <p>Example of terribly stored, expired film, original scan</p>
   </div>
-  <div class="photo">
+  <div class="photo-container">
     <a href="/assets/img/support/sensia-200-corrected.jpg">
-      <img src="/assets/img/support/sensia-200-corrected.jpg" alt="Sensia 200">
+      <img class="photo" src="/assets/img/support/sensia-200-corrected.jpg" alt="Sensia 200">
     </a>
     <p>The same slide but with some quick digital corrections</p>
   </div>
