@@ -85,6 +85,13 @@ header a:visited {
   color: #8596b0;
 }
 
+.warning {
+  color: #b33e17;
+  background-color: #f6cabb;
+  border: 1px solid #b33e17;
+  padding: 1em;
+}
+
 .photo {
   border: 1em #fff solid;
   box-shadow: 0px 0px 1em 0px rgba(0, 0, 0, 0.5);

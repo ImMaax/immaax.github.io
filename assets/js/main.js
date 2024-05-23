@@ -99,4 +99,22 @@ window.onload = () => {
 
     item.parentNode.insertBefore(copyBtn, item.nextSibling)
   })
+
+  document.querySelectorAll("img.photo").forEach(item => {
+    item.oncontextmenu = (event) => {
+      let warning = document.createElement("p")
+      warning.classList.add("warning")
+      warning.innerText = `
+      All photos on my website are subject to copyright law!
+      They may not be reproduced or republished in any way, shape or form without my written consent.
+      The copies published on this website were deliberately reduced in quality so that they are useless for reproduction.
+      Please contact me if you are interested in licensing.`.trim()
+      document.querySelector("header").appendChild(warning)
+      warning.scrollIntoView()
+
+      setTimeout(() => {
+        warning.remove()
+      }, 8000)
+    }
+  })
 }
