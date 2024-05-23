@@ -13,11 +13,11 @@ loosely organized them into albums.</p>
 <div id="photo-grid">
   {% for page in site.pages %}
     {% if page.layout == "album" %}
-      <div class="photo">
+      <div class="album-grid-item">
         <a href="{{ page.url }}">
-          <img src="/assets/img/photos/{{ page.photo }}" class="photo-grid-img" alt="{{ page.description }}" title="{{ page.description }}">
+          <img src="/assets/img/photos/{{ page.photo }}" class="photo" alt="{{ page.description }}" title="{{ page.description }}"><br>
+          {{ page.title }}
         </a>
-        <h3>{{ page.title }}</h3>
       </div>
     {% endif %}
   {% endfor %}

@@ -143,18 +143,30 @@ ul {
   display: block;
 }
 
+.album-grid-item {
+  text-align: center;
+  font-weight: bold;
+  padding: 1em;
+}
+
+.album-grid-item a:link,
+.album-grid-item a:visited {
+  text-decoration: none;
+  color: #343f50;
+}
+
 #search-field {
   width: 100%;
 }
 
 @media (max-width: 450px) {
   #photo-grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 350px) {
   #photo-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
