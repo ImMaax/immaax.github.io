@@ -2,7 +2,7 @@
 layout: album
 title: Lanzarote
 description: Photos taken on Lanzarote
-photo: DSC01762.jpg
+photo: lanzarote.jpg
 included:
   - "Sand-scape"
   - "Mountain and Bridge"

@@ -2,7 +2,7 @@
 layout: album
 title: Black and White Solitude
 description: Black and White Solitude
-photo: DSC02377.jpg
+photo: black-and-white-solitude.jpg
 included:
   - "Silence"
   - "Lone Tree"

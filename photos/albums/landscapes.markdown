@@ -2,7 +2,7 @@
 layout: album
 title: Landscapes
 description: Photos of landscapes
-photo: DSC02680.jpg
+photo: landscapes.jpg
 included:
   - "Fields of Gold"
   - "Edersee"

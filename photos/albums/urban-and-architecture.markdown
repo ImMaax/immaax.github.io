@@ -2,7 +2,7 @@
 layout: album
 title: Urban and Architecture
 description: Urban and Architecture
-photo: frankfurt-highrises.jpg
+photo: urban-and-architecture.jpg
 included:
   - "Frauenkirche, Dresden"
   - "Lantern at Wilhelmshöhe"

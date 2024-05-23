@@ -2,7 +2,7 @@
 layout: album
 title: Bergpark Wilhelmshöhe, Kassel
 description: Photos of the beautiful Bergpark Wilhelmshöhe in Kassel
-photo: herkules.jpg
+photo: bergpark-wilhelmshoehe-kassel.jpg
 included:
   - "Cascades"
   - "Wet Rocks"
