@@ -10,6 +10,7 @@ included:
   - "Sand-scape"
   - "Lone Tree"
   - "Silence"
+  - "Darkened Fields"
 ---
 
 Photos of natural landscapes, mostly without (noticeable) human impact.
