@@ -11,6 +11,7 @@ included:
   - "Flowers"
   - "Yellow"
   - "Ivy Door"
+  - "White Pebbles"
 ---
 
 Everything about patterns, shapes and colors, really. Mainly contains detail
