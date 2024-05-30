@@ -159,6 +159,12 @@ ul {
   color: #343f50;
 }
 
+#categories-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+
 #search-field {
   width: 100%;
 }
@@ -166,6 +172,10 @@ ul {
 @media (max-width: 450px) {
   #photo-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  #categories-grid {
+    grid-template-columns: 1fr;
   }
 }
 

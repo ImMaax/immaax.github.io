@@ -2,6 +2,8 @@
 layout: post
 title: The Zeiss-Ikon Contessa LK Camera
 description: My thoughts on this Zeiss viewfinder camera
+tags:
+  - cameras
 ---
 
 The _Zeiss-Ikon Contessa LK_ is your typical 35mm viewfinder camera from the

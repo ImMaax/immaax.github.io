@@ -6,16 +6,26 @@ description: Articles at www.goetz.pro
 
 <h3>Articles</h3>
 
-{% if site.categories.articles and site.categories.articles.size != 0 %}
-  <ul>
-    {% for post in site.categories.articles %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <span class="info">({{ post.date | date: "%-d %B %Y" }})</span><br>
-        {{ post.description }}
-      </li>
-    {% endfor %}
-  </ul>
-{% else %}
-  <p class="info">No articles to display.</p>
-{% endif %}
+<p>Below are all the essays I have published on this website, sorted into
+categories, ordered alphabetically. Most articles focus on analog
+photography.</p>
+
+<p>If you are too lazy to look through this list, use the
+<a href="/search">search</a> instead.</p>
+
+<div id="categories-grid">
+  {% for tag in site.tags %}
+    <div class="categories-grid-item">
+      <h4>{{ tag[0] | capitalize }}</h4>
+      <ul>
+        {% for post in tag[1] %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <span class="info">({{ post.date | date: "%-d %B %Y" }})</span><br>
+            {{ post.description }}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+</div>

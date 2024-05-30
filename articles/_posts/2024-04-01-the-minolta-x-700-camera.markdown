@@ -2,6 +2,8 @@
 layout: post
 title: The Minolta X-700 Camera
 description: Thoughts on and experiences with this cheaper 35mm SLR
+tags:
+  - cameras
 ---
 
 The Minolta X-700 and its little siblings, the X-500 and X-300, are often times

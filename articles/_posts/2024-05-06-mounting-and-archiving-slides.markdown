@@ -2,6 +2,8 @@
 layout: post
 title: Mounting and Archiving Slides
 description: How and why I mount which slides and how I archive them
+tags:
+  - film
 ---
 
 If you are shooting slides, it makes sense to mount them in slide mounts. Mounts

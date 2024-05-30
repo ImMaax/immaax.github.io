@@ -2,6 +2,8 @@
 layout: post
 title: On Digitizing Vinyl
 description: My thoughts on and a guide to digitizing old vinyl records
+tags:
+  - audio
 ---
 
 If you are like me and own a substantial collection of old vinyl, the thought of

@@ -2,6 +2,8 @@
 layout: post
 title: The Mamiya RB67 Camera System
 description: My thoughts on and experiences with the RB67 medium format camera
+tags:
+  - cameras
 ---
 
 The Mamiya RB67 camera system is one of the best ones I have worked with. Highly

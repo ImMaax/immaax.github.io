@@ -2,6 +2,8 @@
 layout: post
 title: Shooting Expired Film
 description: "Expired film: Factors to consider and my experiences"
+tags:
+  - film
 ---
 
 Buying unexposed, expired film on the used market might be tempting: It is

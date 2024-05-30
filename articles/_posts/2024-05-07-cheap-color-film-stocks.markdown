@@ -2,6 +2,8 @@
 layout: post
 title: Cheap Color Film Stocks
 description: My favorite film is expensive, so what about the low-end market?
+tags:
+  - film
 ---
 
 The fact that film, no matter the format or type, is getting more and more
