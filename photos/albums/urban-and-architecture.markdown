@@ -12,6 +12,7 @@ included:
   - "Urban Night Lights"
   - "Yellow"
   - "Ivy Door"
+  - "Hotel Room Sunset"
 ---
 
 Photos taken in cities, mostly containing architecture.
