@@ -12,6 +12,7 @@ included:
   - "Silence"
   - "Darkened Fields"
   - "Sunset with Moon"
+  - "Path and Tree"
 ---
 
 Photos of natural landscapes, mostly without (noticeable) human impact.

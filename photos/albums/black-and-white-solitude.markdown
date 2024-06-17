@@ -8,6 +8,7 @@ included:
   - "Lone Tree"
   - "Herkules"
   - "Rocks on the Beach"
+  - "Path and Tree"
 ---
 
 Displaying a feeling of solitude through black and white photography.
