@@ -12,6 +12,7 @@ included:
   - "Yellow"
   - "Ivy Door"
   - "White Pebbles"
+  - "Garden Fence"
 ---
 
 Everything about patterns, shapes and colors, really. Mainly contains detail
