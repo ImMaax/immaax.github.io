@@ -13,6 +13,7 @@ included:
   - "Ivy Door"
   - "White Pebbles"
   - "Garden Fence"
+  - "Door"
 ---
 
 Everything about patterns, shapes and colors, really. Mainly contains detail
