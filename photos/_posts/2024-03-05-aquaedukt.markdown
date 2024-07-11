@@ -5,9 +5,9 @@ description: Aquädukt, Bergpark Wilhelmshöhe
 
 camera: Mamiya RB 67 Pro S
 lens: Mamiya Sekor C 90mm f3.8
-film: Fujichrome Provia 400F (120)
+film: Fujichrome Provia 100F (120)
 location: Kassel, Germany
-taken: 2023-08
+taken: 2023-08-23
 
 photo: aquaedukt.jpg
 ---
