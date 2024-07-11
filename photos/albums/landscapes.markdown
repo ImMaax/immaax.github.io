@@ -15,6 +15,7 @@ included:
   - "Leading Lines"
   - "Path and Tree"
   - "Path and Tree II"
+  - "Sunrays"
 ---
 
 Photos of natural landscapes, mostly without (noticeable) human impact.
