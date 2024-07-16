@@ -15,6 +15,7 @@ included:
   - "Garden Fence"
   - "Door"
   - "Focus"
+  - "Leaves"
 ---
 
 Everything about patterns, shapes and colors, really. Mainly contains detail
