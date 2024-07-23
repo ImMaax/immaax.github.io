@@ -40,18 +40,25 @@
         <hr class="margin-sm">
       </header>
 
-      <main>
-        <noscript class="info">
-          <p>It appears your browser does not support JavaScript.</p>
-          <p>
-            Although JavaScript is not strictly necessary to use this site, it's
-            recommended to enable it anyway in order for some features to work.
-          </p>
-        </noscript>
+      <div id="main-inner">
+        <main>
+          <noscript class="info">
+            <p>It appears your browser does not support JavaScript.</p>
+            <p>
+              Although JavaScript is not strictly necessary to use this site,
+              it's recommended to enable it anyway in order for some features to
+              work.
+            </p>
+          </noscript>
 
-        {{ content }}
-        <hr>
-      </main>
+          {{ content }}
+        </main>
+
+        <aside>
+          SIDEBAR CONTENT
+        </aside>
+      </div>
+      <hr>
 
       <footer>
         <p>

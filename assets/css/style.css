@@ -10,6 +10,23 @@ body {
   max-width: 800px;
 }
 
+#main-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "text text text side";
+}
+
+main {
+  grid-area: text;
+}
+
+aside {
+  grid-area: side;
+  border-left: 2px solid #d1d7e1;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
 header,
 blockquote,
 .info {
@@ -167,6 +184,20 @@ ul {
 
 #search-field {
   width: 100%;
+}
+
+@media (max-width: 800px) {
+  #main-inner {
+    display: block;
+  }
+
+  aside {
+    border-left: none;
+    border-top: 2px solid #d1d7e1;
+    padding-left: 0px;
+    margin-left: 0px;
+    padding-top: 10px;
+  }
 }
 
 @media (max-width: 450px) {
