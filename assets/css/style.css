@@ -22,7 +22,6 @@ main {
 
 aside {
   grid-area: side;
-  border-left: 2px solid #d1d7e1;
   margin-left: 10px;
   padding-left: 10px;
 }
@@ -117,6 +116,14 @@ header a:visited {
   margin: auto;
 }
 
+#portrait {
+  border: 0.25em #fff solid;
+  box-shadow: 0px 0px 0.25em 0px rgba(0, 0, 0, 0.5);
+  float: left;
+  margin-right: 0.8em;
+  margin-bottom: 0.2em;
+}
+
 .table-cont {
   overflow-x: scroll;
 }
@@ -192,7 +199,6 @@ ul {
   }
 
   aside {
-    border-left: none;
     border-top: 2px solid #d1d7e1;
     padding-left: 0px;
     margin-left: 0px;
