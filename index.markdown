@@ -6,6 +6,8 @@ description: Welcome to www.goetz.pro
 
 ### Home
 
+<img src="/assets/img/collage1.png" alt="Collage" class="txt-img">
+
 Welcome!
 
 This homepage serves mostly as my _creative outlet_. My name is Maximilian Götz
@@ -18,7 +20,3 @@ On here, you can
 
 I have profiles on various social media sites. If you are interested, have a
 look below.
-
-<div class="photo-container">
-  <img src="/assets/img/support/me-metering-light.jpg" alt="Me, metering light" class="photo">
-</div>

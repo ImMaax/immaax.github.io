@@ -11,7 +11,14 @@
   (async function() {
     const searchIn  = document.getElementById("search-field")
     const searchOut = document.getElementById("search-results")
+    const urlQuery  = new URLSearchParams(window.location.search).get("q")
+
     const sf = new SearchField(searchIn, searchOut)
     await sf.init()
+
+    if (urlQuery) {
+      searchIn.value = urlQuery
+      searchIn.dispatchEvent(new Event("keyup"))
+    }
   })()
 </script>
