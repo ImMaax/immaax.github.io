@@ -1,0 +1,13 @@
+---
+layout: photo
+title: Leaves II
+description: Leaves II
+
+camera: Nikon F3
+lens: AF Nikkor 50mm f1.8
+film: Agfapan 400 (135, old German stock)
+location: Baunatal, Germany
+taken: July 2024
+
+photo: leaves-ii.jpg
+---

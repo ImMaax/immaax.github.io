@@ -16,6 +16,7 @@ included:
   - "Door"
   - "Focus"
   - "Leaves"
+  - "Leaves II"
 ---
 
 Everything about patterns, shapes and colors, really. Mainly contains detail

@@ -16,6 +16,8 @@ included:
   - "Path and Tree"
   - "Path and Tree II"
   - "Sunrays"
+  - "Rocks on the Beach II"
+  - "Cala Millor Shoreline"
 ---
 
 Photos of natural landscapes, mostly without (noticeable) human impact.
