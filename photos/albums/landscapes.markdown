@@ -4,6 +4,7 @@ title: Landscapes
 description: Photos of landscapes
 photo: landscapes.jpg
 included:
+  - "Sunrise at the Pier"
   - "Fields of Gold"
   - "Edersee"
   - "Mountain and Bridge"
