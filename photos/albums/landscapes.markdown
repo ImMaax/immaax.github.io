@@ -19,6 +19,7 @@ included:
   - "Sunrays"
   - "Rocks on the Beach II"
   - "Cala Millor Shoreline"
+  - "Rocks on the Beach III"
 ---
 
 Photos of natural landscapes, mostly without (noticeable) human impact.
