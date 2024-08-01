@@ -1,0 +1,13 @@
+---
+layout: photo
+title: Locked
+description: Locked
+
+camera: Nikon F3
+lens: AF Nikkor 50mm f1.8
+film: Kodak Tri-X Pan 400 (135)
+location: Baunatal, Germany
+taken: July 2024
+
+photo: locked.jpg
+---

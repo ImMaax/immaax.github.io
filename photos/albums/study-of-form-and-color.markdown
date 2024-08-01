@@ -17,6 +17,7 @@ included:
   - "Focus"
   - "Leaves"
   - "Leaves II"
+  - "Locked"
 ---
 
 Everything about patterns, shapes and colors, really. Mainly contains detail
