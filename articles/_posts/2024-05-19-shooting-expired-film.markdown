@@ -61,7 +61,11 @@ like five to ten years expired.
 
 When being given old film by family and friends, expect the worst. I know how
 that sounds but better be cautious than sorry. Use such film for experimenting
-and testing only.
+and testing only. Especially color film found in wardrobes and the like is
+typically unusable: one roll of some old _Kodacolor_ stock I was given did not
+produce any discernible images anymore, even at multiple stops overexposure.
+Some other old _Kodak Gold_ and _Ultra Gold_ rolls I was given barely produced
+an image and only did so with massive color shifts.
 
 Unexposed color film has a tendency to develop color shifts when stored
 incorrectly for too long, especially into the magenta or blue tones. Some
@@ -103,8 +107,36 @@ years ago = ISO 50) to be a good general guideline. Again, test one roll from a
 larger batch to be sure.
 
 Black and white film tends to fare better, but it is not immune to aging. Of
-course, you will not get color shifts. Typically, b/w film can be shot at box
-speed.
+course, you will not get color shifts. Lower speed b/w film can typically be
+shot at box speed. Film of ISO 400 and higher tends to require some
+overexposure, although not as much as comparable color negative film would.
+In my experience, one stop per 15 years suffices. I have shot old _Agfapan 400_
+and _Ilford HP5+_ from the mid 1990s of unknown storage conditions both at EI
+100 instead of the box speed of 400 and the results came out great and properly
+exposed.
+
+<div class="photo-container">
+  <a href="{% post_url photos/2024-07-18-leaves-ii %}">
+    <img class="photo" src="/assets/img/photos/leaves-ii.jpg" alt="Agfapan 400">
+  </a>
+  <p>Agfapan 400, expired 1995, unknown storage, at EI 100</p>
+</div>
+
+Some _Kodak Tri-X Pan 400_ I recently acquired needed a little overexposure too.
+I tried it at EI 320, but it could have used a little bit more, the negatives
+still turned out somewhat thin, but usable. In the case of doubt, I would rather
+over- than underexpose.
+
+<div class="photo-container">
+  <a href="{% post_url photos/2024-08-01-locked %}">
+    <img class="photo" src="/assets/img/photos/locked.jpg" alt="Kodak Tri-X Pan 400">
+  </a>
+  <p>Kodak Tri-X Pan 400, expired in the 1990s, unknown storage, at EI 320</p>
+</div>
+
+Of course, all this applies for film of unknown storage conditions. If you know
+for a fact that your film was being refrigerated since it was bought, shoot it
+at box speed, it will be fine.
 
 ### Kodachrome and Other Discontinued Process Films
 
