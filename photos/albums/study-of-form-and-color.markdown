@@ -18,6 +18,7 @@ included:
   - "Leaves"
   - "Leaves II"
   - "Locked"
+  - "Materials"
 ---
 
 Everything about patterns, shapes and colors, really. Mainly contains detail
