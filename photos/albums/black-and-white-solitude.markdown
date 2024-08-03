@@ -9,6 +9,7 @@ included:
   - "Herkules"
   - "Rocks on the Beach"
   - "Path and Tree"
+  - "Far Dream"
 ---
 
 Displaying a feeling of solitude through black and white photography.

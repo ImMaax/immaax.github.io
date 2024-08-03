@@ -1,0 +1,20 @@
+---
+layout: photo
+title: Far Dream
+description: Far Dream
+
+camera: Fujica ST-801
+lens: EBC Fujinon 55mm f1.8
+film: AgfaPhoto APX 100 (135)
+location: Kassel, Germany
+taken: 2024-01-03
+
+photo: far-dream.jpg
+---
+
+When I took this photo, it had been raining for a few days. The entire area was
+flooded and became a moor, although the water pictured here is a normal lake. It
+was gloomy, dark and hazy. This shot has a strong serenity and a feeling of a
+far dream or old, faint memory to it, I think. It's almost a bit haunting or
+eerie, even. The toning and the long exposure blur in the tree branches and
+water certainly add to that.
