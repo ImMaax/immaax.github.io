@@ -21,6 +21,7 @@ included:
   - "Cala Millor Shoreline"
   - "Rocks on the Beach III"
   - "Far Dream"
+  - "Bastei im Elbsandsteingebirge"
 ---
 
 Photos of natural landscapes, mostly without (noticeable) human impact.
