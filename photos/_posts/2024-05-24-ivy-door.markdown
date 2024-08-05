@@ -5,7 +5,7 @@ description: Ivy Door
 
 camera: Fujica ST-801
 lens: EBC Fujinon 55mm f1.8
-film: Fujichrome Velvia 100 (135)
+film: Fujichrome Sensia 100 (135)
 location: Freiberg, Germany
 taken: 2023-09
 
