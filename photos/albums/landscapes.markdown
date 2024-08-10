@@ -22,6 +22,7 @@ included:
   - "Rocks on the Beach III"
   - "Far Dream"
   - "Bastei im Elbsandsteingebirge"
+  - "Along The Way"
 ---
 
 Photos of natural landscapes, mostly without (noticeable) human impact.

@@ -10,6 +10,7 @@ included:
   - "Rocks on the Beach"
   - "Path and Tree"
   - "Far Dream"
+  - "Along The Way"
 ---
 
 Displaying a feeling of solitude through black and white photography.
