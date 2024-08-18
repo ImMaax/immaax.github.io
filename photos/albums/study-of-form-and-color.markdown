@@ -8,6 +8,7 @@ included:
   - "Reed and Leaves"
   - "Northern Lights 1"
   - "Yellow Petals"
+  - "Petals"
   - "Flowers"
   - "Yellow"
   - "Ivy Door"
