@@ -23,6 +23,7 @@ included:
   - "Far Dream"
   - "Bastei im Elbsandsteingebirge"
   - "Along The Way"
+  - "Hay Bales"
 ---
 
 Photos of natural landscapes, mostly without (noticeable) human impact.

@@ -14,6 +14,7 @@ included:
   - "Ivy Door"
   - "White Pebbles"
   - "Garden Fence"
+  - "Garden Fence II"
   - "Door"
   - "Focus"
   - "Leaves"
