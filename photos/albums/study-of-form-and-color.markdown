@@ -22,6 +22,7 @@ included:
   - "Leaves III"
   - "Locked"
   - "Materials"
+  - "Orchid"
 ---
 
 Everything about patterns, shapes and colors, really. Mainly contains detail
