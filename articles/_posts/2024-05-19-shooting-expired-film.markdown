@@ -116,9 +116,7 @@ and _Ilford HP5+_ from the mid 1990s of unknown storage conditions both at EI
 exposed.
 
 <div class="photo-container">
-  <a href="{% post_url photos/2024-07-18-leaves-ii %}">
-    <img class="photo" src="/assets/img/photos/leaves-ii.jpg" alt="Agfapan 400">
-  </a>
+  <img class="photo" src="/assets/img/support/leaves-ii.jpg" alt="Agfapan 400">
   <p>Agfapan 400, expired 1995, unknown storage, at EI 100</p>
 </div>
 
@@ -128,9 +126,7 @@ still turned out somewhat thin, but usable. In the case of doubt, I would rather
 over- than underexpose.
 
 <div class="photo-container">
-  <a href="{% post_url photos/2024-08-01-locked %}">
-    <img class="photo" src="/assets/img/photos/locked.jpg" alt="Kodak Tri-X Pan 400">
-  </a>
+  <img class="photo" src="/assets/img/support/locked.jpg" alt="Kodak Tri-X Pan 400">
   <p>Kodak Tri-X Pan 400, expired in the 1990s, unknown storage, at EI 320</p>
 </div>
 

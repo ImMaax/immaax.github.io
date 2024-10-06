@@ -5,6 +5,119 @@ class Helpers {
     const uri = `mailto:${atob(b64Address)}?subject=${encodeURI(subject)}`
     window.location.href = uri
   }
+
+  static fade(element, duration) { // modified function from stack overflow
+    (function increment(value = 0) {
+        element.style.opacity = String(value)
+        if (element.style.opacity !== "1") {
+            setTimeout(() => {
+                increment(value + 0.01)
+            }, duration / 100)
+        }
+    })()
+  }
+}
+
+class Gallery {
+  #root
+  #data
+
+  constructor(root, data) {
+    this.#root = root
+    this.#data = data
+
+    this.#buildNavigation()
+  }
+
+  #linkClickHandler(ev) {
+    ev.preventDefault()
+    const param = (ev.target.getAttribute("data-params") ?? null)
+    this.updatePage(this[ev.target.getAttribute("data-action")](param))
+  }
+
+  registerLink(el) {
+    el.addEventListener("click", (ev) => this.#linkClickHandler(ev))
+  }
+
+  updatePage(content) {
+    Helpers.fade(this.#root.querySelector("#gallery-column-two"), 500)
+    this.#root.querySelector("#gallery-column-two").innerText = ""
+    this.#root.querySelector("#gallery-column-two").appendChild(content)
+  }
+
+  #buildNavigation() {
+    const list = document.createElement("ul")
+    const albums = this.#data["albums"]
+
+    for (let id in albums) {
+      const li = document.createElement("li")
+      const a  = document.createElement("a")
+
+      a.href = "#"
+      a.innerText = albums[id]["title"]
+      a.setAttribute("data-action", "album")
+      a.setAttribute("data-params", id)
+      this.registerLink(a)
+
+      li.appendChild(a)
+      list.appendChild(li)
+    }
+
+    const domAlbums = this.#root.querySelector("#gallery-albums")
+    domAlbums.innerText = ""
+    domAlbums.appendChild(list)
+  }
+
+  // ACTIONS
+  // ===========================================================================
+  album(id) {
+    const div = document.createElement("div")
+    div.classList.add("gallery")
+
+    const result = this.#data["albums"][id]
+    result["pictures"].forEach(picture => {
+      const a   = document.createElement("a")
+      const img = document.createElement("img")
+      img.classList.add("photo")
+      img.src = `/assets/img/photos/${picture["file"]}`
+      a.href = "#"
+      const options = `${picture["file"]};${picture["title"]};${picture["flickr"]}`
+      // the data-* attrs need to be duplicated due to how event targets work
+      a.setAttribute("data-action", "photo")
+      a.setAttribute("data-params", options)
+      img.setAttribute("data-action", "photo")
+      img.setAttribute("data-params", options)
+      this.registerLink(a)
+
+      a.appendChild(img)
+      div.appendChild(a)
+    })
+
+    return div
+  }
+
+  photo(options) {
+    const params = options.split(";")
+
+    const div = document.createElement("div")
+    const h4  = document.createElement("h4")
+    const img = document.createElement("img")
+    const p   = document.createElement("p")
+    const a   = document.createElement("a")
+
+    h4.innerText = params[1]
+    img.classList.add("photo")
+    img.src = `/assets/img/photos/${params[0]}`
+    a.href = `https://flickr.com/photos/im4x/${params[2]}`
+    a.target = "_blank"
+    a.innerText = "View more info on Flickr..."
+
+    p.appendChild(a)
+    div.appendChild(h4)
+    div.appendChild(img)
+    div.appendChild(p)
+    return div
+  }
 }
 
 class SearchField {

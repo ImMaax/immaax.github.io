@@ -3,5 +3,6 @@ Disallow: /
 
 User-agent: *
 Disallow: /search/search.json
+Disallow: /photos/gallery.json
 
 Sitemap: https://goetz.pro/sitemap.xml
