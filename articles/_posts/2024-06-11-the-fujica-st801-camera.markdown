@@ -19,7 +19,7 @@ and a later one with a thinner, wider engraved logo. Some copies are silver,
 others black.
 
 <div class="photo-container">
-  <img class="photo" src="/assets/img/photos/ivy-door.jpg" alt="Sample Photo">
+  <img class="photo" src="/assets/img/support/ivy-door.jpg" alt="Sample Photo">
   <p>Sample photo, taken in Freiberg, 2023</p>
 </div>
 
@@ -51,7 +51,7 @@ Its ISO range goes all the way from 25 to 3200, which is just fine for
 real world usage.
 
 <div class="photo-container">
-  <img class="photo" src="/assets/img/photos/yellow.jpg" alt="Sample Photo">
+  <img class="photo" src="/assets/img/support/yellow.jpg" alt="Sample Photo">
   <p>Sample photo, taken in Saxony, 2023</p>
 </div>
 

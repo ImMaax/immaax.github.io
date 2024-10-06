@@ -1,0 +1,42 @@
+---
+layout: default
+title: Photos
+description: The photographic portfolio of Maximilian Götz
+---
+<h3>Photos</h3>
+<p>
+  Below, you will find a small selection of some of my best photos, sorted
+  roughly by genre. Click on any genre in the list and you will get a little
+  gallery of pictures. Further clicking on the pictures will show you some more
+  information.
+</p>
+<p>
+  The contents change regularly in order for them to stay representative of my
+  current work.
+</p>
+<p>
+  If you are interested in more of my work, please see
+  <a href="https://flickr.com/photos/im4x/" target="_blank" rel="external">
+    my Flickr photostream</a>.
+</p>
+
+<div id="gallery">
+  <div id="gallery-column-one">
+    <div id="gallery-albums">
+      Retrieving data...
+    </div>
+  </div>
+  <div id="gallery-column-two"></div>
+</div>
+
+<script>
+  fetch(`/photos/gallery.json`)
+  .then(res => res.json())
+  .then(data => {
+    new Gallery(document.querySelector("#gallery"), data)
+  })
+  .catch(err => {
+    document.querySelector("#gallery-column-one").innerText = ""
+    document.querySelector("#gallery-column-two").innerText = "An error occured!"
+  })
+</script>

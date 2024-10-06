@@ -1,0 +1,99 @@
+{
+  "albums": {
+    "landscape": {
+      "title": "Landscape",
+      "pictures": [
+        {
+          "file": "hirzstein-afar.jpg",
+          "title": "Hirzstein Afar",
+          "flickr": "54044355956"
+        },
+        {
+          "file": "silence.jpg",
+          "title": "Silence",
+          "flickr": "53486560177"
+        },
+        {
+          "file": "lone-tree.jpg",
+          "title": "Lone Tree",
+          "flickr": "53456387709"
+        },
+        {
+          "file": "countryside.jpg",
+          "title": "Countryside",
+          "flickr": "54040397051"
+        },
+        {
+          "file": "disappearing-into-the-fog.jpg",
+          "title": "Disappearing Into the Fog",
+          "flickr": "54044355956"
+        },
+        {
+          "file": "habichtswald.jpg",
+          "title": "Habichtswald",
+          "flickr": "53996615530"
+        },
+        {
+          "file": "sunrise-at-the-pier.jpg",
+          "title": "Sunrise At the Pier",
+          "flickr": "53879706341"
+        },
+        {
+          "file": "rocks-on-the-beach-iii.jpg",
+          "title": "Rocks on the Beach III",
+          "flickr": "53885114333"
+        }
+      ]
+    },
+    "still-life": {
+      "title": "Still Life",
+      "pictures": [
+        {
+          "file": "violator.jpg",
+          "title": "Violator",
+          "flickr": "53992822018"
+        },
+        {
+          "file": "shell.jpg",
+          "title": "Shell",
+          "flickr": "54008144678"
+        },
+        {
+          "file": "orchid.jpg",
+          "title": "Orchid",
+          "flickr": "53974519871"
+        }
+      ]
+    },
+    "details": {
+      "title": "Details",
+      "pictures": [
+        {
+          "file": "locked.jpg",
+          "title": "Locked",
+          "flickr": "53894512270"
+        },
+        {
+          "file": "door.jpg",
+          "title": "Door",
+          "flickr": "53840853993"
+        }
+      ]
+    },
+    "flora": {
+      "title": "Flora",
+      "pictures": [
+        {
+          "file": "petals.jpg",
+          "title": "Petals",
+          "flickr": "53929932130"
+        },
+        {
+          "file": "leaves-ii.jpg",
+          "title": "Leaves II",
+          "flickr": "53865063235"
+        }
+      ]
+    }
+  }
+}
