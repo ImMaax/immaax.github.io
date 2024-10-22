@@ -209,6 +209,12 @@ ul {
   object-fit: contain;
 }
 
+.text-icon {
+  float: left;
+  max-width: 20%;
+  padding-right: 1em;
+}
+
 @media (min-width: 450px) {
   #gallery {
     display: flex;
