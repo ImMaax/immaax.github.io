@@ -6,7 +6,7 @@ description: Welcome to www.goetz.pro
 
 ### Home
 
-<img src="/assets/img/collage1.png" alt="Collage" class="txt-img">
+<img src="/assets/img/icon-photo.png" alt="Collage" class="txt-img">
 
 Welcome!
 
