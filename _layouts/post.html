@@ -4,7 +4,8 @@ layout: default
 <h3>{{ page.title }}</h3>
 
 <p class="info">
-  Published {{ page.date | date: "%-d %B %Y" }}
+  Published {{ page.date | date: "%-d %B %Y" }},
+  filed under "{{ page.tags | array_to_sentence_string }}"
 </p>
 
 <img src="/assets/img/icon-article.png" alt="Article Icon" class="text-icon">
