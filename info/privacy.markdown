@@ -6,6 +6,8 @@ description: Datenschutzerklärung für www.goetz.pro
 
 ### Datenschutzerklärung
 
+<img src="/assets/img/icon-legal.png" alt="Legal Icon" class="txt-img">
+
 *Stand: Oktober 2024*
 
 #### 1. Einführung

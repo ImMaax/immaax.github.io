@@ -6,6 +6,8 @@ description: Impressum für www.goetz.pro
 
 ### Impressum gemäß § 18 MStV und § 5 DDG
 
+<img src="/assets/img/icon-legal.png" alt="Legal Icon" class="txt-img">
+
 Verantwortlicher für diese Webseite und ihre Inhalte ist
 
 {% include imprint.html %}
