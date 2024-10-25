@@ -3,6 +3,7 @@ body {
                Times New Roman, serif;
   color: #343f50;
   background-image: url(/assets/img/bg.png);
+  font-size: 16px;
 }
 
 #main {
@@ -91,6 +92,14 @@ h2 {
   color: #8596b0;
 }
 
+a[href^="http://"]:not([href*="goetz.pro"]):after,
+a[href^="https://"]:not([href*="goetz.pro"]):after {
+  content: url("/assets/img/external.png");
+  vertical-align: unset;
+  padding-left: 2px;
+  vertical-align: middle;
+}
+
 header a:link,
 header a:visited {
   color: inherit;
@@ -128,6 +137,11 @@ header a:visited {
   float: left;
   margin-right: 0.8em;
   margin-bottom: 0.2em;
+}
+
+#imprint-contact * {
+  display: inline-block;
+  text-indent: 2em;
 }
 
 .table-cont {
