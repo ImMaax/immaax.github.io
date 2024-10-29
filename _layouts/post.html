@@ -5,6 +5,9 @@ layout: default
 
 <p class="info">
   Published {{ page.date | date: "%-d %B %Y" }},
+  {% if page.last_updated_at %}
+    last updated on {{ page.last_updated_at | date: "%-d %B %Y" }} and
+  {% endif %}
   filed under "{{ page.tags | array_to_sentence_string }}"
 </p>
 

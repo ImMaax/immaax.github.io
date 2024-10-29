@@ -4,6 +4,7 @@ title: Shooting Expired Film
 description: "Expired film: Factors to consider and my experiences"
 tags:
   - film
+last_updated_at: 2024-10-29
 ---
 
 When I got more serious with my film photography, I started shooting expired
