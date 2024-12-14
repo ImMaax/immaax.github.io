@@ -1,0 +1,41 @@
+---
+layout: default
+title: Home
+description: Welcome to the homepage of Maximilian Götz
+gallery:
+  - deterioration.jpg
+  - locked.jpg
+  - petals-lithed.jpg
+  - violator.jpg
+  - between-the-trees.jpg
+albums:
+  -
+    title: Flora
+    id: flora
+    photo: violator.jpg
+  -
+    title: Details
+    id: details
+    photo: locked.jpg
+  -
+    title: Landscapes
+    id: landscapes
+    photo: between-the-trees.jpg
+---
+
+<div id="home-gallery-cont">
+  <section id="home-gallery">
+    {% for photo in page.gallery %}
+      <img class="fade-image" src="/assets/img/photos/{{ photo }}" alt="Photo">
+    {% endfor %}
+  </section>
+</div>
+
+<div class="album-grid">
+  {% for album in page.albums %}
+    <a href="/albums/{{ album.id }}" class="album-grid-item">
+      <img src="/assets/img/photos/{{ album.photo }}" alt="{{ album.title }}">
+      <p>{{ album.title }}</p>
+    </a>
+  {% endfor %}
+</div>

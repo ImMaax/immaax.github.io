@@ -1,0 +1,211 @@
+:root {
+  --black: #343f50;
+  --dark-blue: #5b6f8d;
+
+  --font-serif: Garamond, Baskerville, Baskerville Old Face, Hoefler Text,
+                Times New Roman, serif;
+}
+
+html,
+body {
+  font-family: var(--font-serif);
+  color: var(--black);
+  padding: 5px;
+}
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header h1 a:link,
+header h1 a:visited {
+  color: var(--black);
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  opacity: 50%;
+}
+
+a:link,
+a:visited {
+  color: var(--dark-blue);
+}
+
+a[href^="http://"]:not([href*="goetz.pro"]):after,
+a[href^="https://"]:not([href*="goetz.pro"]):after {
+  content: url("/assets/img/external.png");
+  vertical-align: unset;
+  padding-left: 2px;
+  vertical-align: middle;
+}
+
+hr {
+  opacity: 50%;
+  margin-top: -1em;
+  margin-bottom: 1em;
+}
+
+.txt-img {
+  float: right;
+  max-width: 100%;
+}
+
+.txt-img-2 {
+  float: left;
+  max-width: 10%;
+  padding-right: 1em;
+}
+
+#home-gallery {
+  width: 90%;
+  max-width: 600px;
+  aspect-ratio: 5 / 4;
+  overflow: hidden;
+  position: relative;
+  border: 5px solid var(--black);
+}
+
+#home-gallery-cont {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.fade-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.fade-image.active {
+  opacity: 1;
+}
+
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 10px;
+}
+
+.album-grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  border: 2px solid var(--black);
+  font-weight: bold;
+}
+
+.album-grid-item:hover {
+  transform: translateY(-5px);
+}
+
+.album-grid-item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.album-grid-item p {
+  padding: 3px;
+  color: var(--black);
+}
+
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fullscreen.show {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.fullscreen-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+}
+
+#fullscreen-img {
+  max-width: 80%;
+  max-height: 80%;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+#fullscreen-caption {
+  color: #fff;
+  margin-top: 5px;
+}
+
+#close-btn {
+  position: absolute;
+  top: -30px;
+  right: 10px;
+  color: #fff;
+  border: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 28px;
+  text-align: center;
+  background: none;
+}
+
+.nav-btn {
+  background: none;
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+#prev-btn {
+  left: 20px;
+}
+
+#next-btn {
+  right: 20px;
+}
+
+@media (max-width: 768px) {
+  #home-gallery {
+    width: 100%;
+    max-width: none;
+  }
+}
