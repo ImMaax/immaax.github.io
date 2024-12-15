@@ -45,9 +45,15 @@ function prepareFullscreen() {
   }
 
   gridItems.forEach((item, index) => {
-    item.addEventListener("click", () => openFullscreen(index))
+    item.addEventListener("click", ev => {
+      ev.preventDefault()
+      openFullscreen(index)
+    })
   })
 
+  fullscreenView.addEventListener("click", ev => {
+    if (ev.target === fullscreenView) closeFullscreen()
+  })
   closeButton.addEventListener("click", closeFullscreen)
   prevButton.addEventListener("click", () => changeImage(-1))
   nextButton.addEventListener("click", () => changeImage(1))

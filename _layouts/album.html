@@ -18,7 +18,7 @@ layout: default
 
 <div class="album-grid">
   {% for photo in page.photos %}
-    <a href="#" class="album-grid-item" data-caption="{{ photo.details }}">
+    <a href="#" class="album-grid-item" data-caption="{{ photo.title }}: {{ photo.details }}">
       <img src="/assets/img/photos/{{ photo.file }}" alt="{{ photo.title }}">
     </a>
   {% endfor %}

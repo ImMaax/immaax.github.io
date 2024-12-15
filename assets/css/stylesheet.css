@@ -1,6 +1,7 @@
 :root {
   --black: #343f50;
   --dark-blue: #5b6f8d;
+  --white: #ffffff;
 
   --font-serif: Garamond, Baskerville, Baskerville Old Face, Hoefler Text,
                 Times New Roman, serif;
@@ -162,20 +163,21 @@ hr {
 }
 
 #fullscreen-caption {
-  color: #fff;
+  color: var(--white);
   margin-top: 5px;
+  font-size: 20px;
 }
 
 #close-btn {
   position: absolute;
-  top: -30px;
-  right: 10px;
-  color: #fff;
+  top: -36px;
+  right: 5px;
+  color: var(--white);
   border: none;
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
   cursor: pointer;
-  font-size: 28px;
+  font-size: 36px;
   text-align: center;
   background: none;
 }
@@ -184,28 +186,42 @@ hr {
   background: none;
   position: absolute;
   top: 50%;
-  color: #fff;
+  color: var(--white);
   border: none;
   width: 40px;
   height: 40px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 28px;
   line-height: 40px;
   text-align: center;
   transform: translateY(-50%);
 }
 
 #prev-btn {
-  left: 20px;
+  left: -20px;
 }
 
 #next-btn {
-  right: 20px;
+  right: -20px;
 }
 
 @media (max-width: 768px) {
   #home-gallery {
     width: 100%;
     max-width: none;
+  }
+}
+
+/* iPhone-specific alignment issues "hack"; TODO: android? */
+@media only screen
+and (max-width: 450px)
+and (-webkit-device-pixel-ratio: 3) {
+  #close-btn {
+    top: -40px;
+    right: -10px;
+  }
+
+  #next-btn {
+    right: 5px;
   }
 }
