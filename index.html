@@ -1,45 +1,95 @@
----
-layout: default
-title: Home
-description: Welcome to the homepage of Maximilian Götz
-gallery:
-  - cold-winter-day.jpg
-  - yellow.jpg
-  - blur.jpg
-  - locked-lithed.jpg
-  - old-world.jpg
-albums:
-  -
-    title: Details
-    id: details
-    photo: yellow.jpg
-  -
-    title: Lith Printing
-    id: lith-printing
-    photo: locked-lithed.jpg
-  -
-    title: Nordhessen
-    id: nordhessen
-    photo: silence.jpg
-  -
-    title: Mallorca
-    id: mallorca
-    photo: rocks-on-the-beach-ii.jpg
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home :: Maximilian Götz</title>
 
-<div id="home-gallery-cont">
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Welcome to the homepage of Maximilian Götz">
+    <meta property="og:site_name" content="Maximilian Götz">
+    <meta property="og:description" content="Welcome to the homepage of Maximilian Götz">
+    <meta property="og:title" content="Home :: Maximilian Götz">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://goetz.pro/">
+    <meta property="og:image" content="https://goetz.pro/assets/img/og-image.jpg?v=3">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Home :: Maximilian Götz">
+    <meta name="twitter:description" content="Welcome to the homepage of Maximilian Götz">
+    <meta name="twitter:image" content="https://goetz.pro/assets/img/twitter-image.jpg?v=3">
+    <meta property="twitter:domain" content="goetz.pro">
+    <meta property="twitter:url" content="https://goetz.pro/">
+
+    <!-- Link -->
+    <link rel="stylesheet" href="/assets/css/stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml"
+          title="Sitemap">
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">Maximilian Götz</a></h1>
+      <hr>
+    </header>
+
+    <main>
+      <noscript>
+        <img src="/assets/img/icon-error.png" alt="Error Icon" class="txt-img-2">
+        <p>It appears that your browser does not support JavaScript. As this
+        website heavily relies on JavaScript, some things may not work as
+        expected.</p>
+        <p>Please enable JavaScript support or update your browser to fully
+        experience this website.</p>
+      </noscript>
+      <div id="home-gallery-cont">
   <section id="home-gallery">
-    {% for photo in page.gallery %}
-      <img class="fade-image" src="/assets/img/photos/{{ photo }}" alt="Photo">
-    {% endfor %}
+    
+      <img class="fade-image" src="/assets/img/photos/cold-winter-day.jpg" alt="Photo">
+    
+      <img class="fade-image" src="/assets/img/photos/yellow.jpg" alt="Photo">
+    
+      <img class="fade-image" src="/assets/img/photos/blur.jpg" alt="Photo">
+    
+      <img class="fade-image" src="/assets/img/photos/locked-lithed.jpg" alt="Photo">
+    
+      <img class="fade-image" src="/assets/img/photos/old-world.jpg" alt="Photo">
+    
   </section>
 </div>
 
 <div class="album-grid">
-  {% for album in page.albums %}
-    <a href="/albums/{{ album.id }}" class="album-grid-item">
-      <img src="/assets/img/photos/{{ album.photo }}" alt="{{ album.title }}">
-      <p>{{ album.title }}</p>
+  
+    <a href="/albums/details" class="album-grid-item">
+      <img src="/assets/img/photos/yellow.jpg" alt="Details">
+      <p>Details</p>
     </a>
-  {% endfor %}
+  
+    <a href="/albums/lith-printing" class="album-grid-item">
+      <img src="/assets/img/photos/locked-lithed.jpg" alt="Lith Printing">
+      <p>Lith Printing</p>
+    </a>
+  
+    <a href="/albums/nordhessen" class="album-grid-item">
+      <img src="/assets/img/photos/silence.jpg" alt="Nordhessen">
+      <p>Nordhessen</p>
+    </a>
+  
+    <a href="/albums/mallorca" class="album-grid-item">
+      <img src="/assets/img/photos/rocks-on-the-beach-ii.jpg" alt="Mallorca">
+      <p>Mallorca</p>
+    </a>
+  
 </div>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2018-2025 Maximilian Götz</p>
+      <p><a href="/info/imprint">Impressum :: Imprint</a></p>
+      <p><a href="/info/privacy">Datenschutzerklärung :: Privacy Statement</a></p>
+    </footer>
+
+    <script src="/assets/js/javascript.js"></script>
+  </body>
+</html>

@@ -1,9 +1,0 @@
-title: Maximilian Götz
-author: Maximilian Götz
-description: The homepage of Maximilian Götz
-baseurl: ""
-url: "https://goetz.pro"
-domain: "goetz.pro"
-permalink: "/:categories/:title"
-plugins:
-  - jekyll-sitemap

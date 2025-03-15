@@ -1,28 +1,93 @@
----
-layout: album
-title: Mallorca
-description: Palma de Mallorca Photo Album
-photos:
-  -
-    title: Rocks On The Beach II
-    file: rocks-on-the-beach-ii.jpg
-    details: "Digital photo"
-  -
-    title: Rocks On The Beach III
-    file: rocks-on-the-beach-iii.jpg
-    details: "Digital photo"
-  -
-    title: Driftwood
-    file: driftwood.jpg
-    details: "Digital photo"
-  -
-    title: Blur
-    file: blur.jpg
-    details: "Digital photo"
-  -
-    title: Sunrise at the Pier
-    file: sunrise-at-the-pier.jpg
-    details: "Digital photo"
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mallorca :: Maximilian Götz</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mallorca Photo Album">
+    <meta property="og:site_name" content="Maximilian Götz">
+    <meta property="og:description" content="Mallorca Photo Album">
+    <meta property="og:title" content="Mallorca :: Maximilian Götz">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://goetz.pro/albums/mallorca">
+    <meta property="og:image" content="https://goetz.pro/assets/img/og-image.jpg?v=3">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mallorca :: Maximilian Götz">
+    <meta name="twitter:description" content="Mallorca Photo Album">
+    <meta name="twitter:image" content="https://goetz.pro/assets/img/twitter-image.jpg?v=3">
+    <meta property="twitter:domain" content="goetz.pro">
+    <meta property="twitter:url" content="https://goetz.pro/albums/mallorca">
+
+    <!-- Link -->
+    <link rel="stylesheet" href="/assets/css/stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml"
+          title="Sitemap">
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">Maximilian Götz</a></h1>
+      <hr>
+    </header>
+
+    <main>
+      <noscript>
+        <img src="/assets/img/icon-error.png" alt="Error Icon" class="txt-img-2">
+        <p>It appears that your browser does not support JavaScript. As this
+        website heavily relies on JavaScript, some things may not work as
+        expected.</p>
+        <p>Please enable JavaScript support or update your browser to fully
+        experience this website.</p>
+      </noscript>
+      <h2>Mallorca</h2>
+
+<div id="fullscreen-view" class="fullscreen">
+  <div class="fullscreen-content">
+    <button id="close-btn">&#10799;</button>
+    <button id="prev-btn" class="nav-btn">&larr;</button>
+    <img id="fullscreen-img" src="" alt="Photo">
+    <p id="fullscreen-caption"></p>
+    <button id="next-btn" class="nav-btn">&rarr;</button>
+  </div>
+</div>
 
 <p>Photos from my 2024 visit to Cala Millor, Mallorca.</p>
+
+<div class="album-grid">
+  
+    <a href="#" class="album-grid-item" data-caption="Sunrise At The Pier: Digital photo">
+      <img src="/assets/img/photos/sunrise-at-the-pier.jpg" alt="Sunrise At The Pier">
+    </a>
+  
+    <a href="#" class="album-grid-item" data-caption="Rocks On The Beach III: Digital photo">
+      <img src="/assets/img/photos/rocks-on-the-beach-iii.jpg" alt="Rocks On The Beach III">
+    </a>
+  
+    <a href="#" class="album-grid-item" data-caption="Rocks On The Beach II: Digital photo">
+      <img src="/assets/img/photos/rocks-on-the-beach-ii.jpg" alt="Rocks On The Beach II">
+    </a>
+  
+    <a href="#" class="album-grid-item" data-caption="Driftwood: Digital photo">
+      <img src="/assets/img/photos/driftwood.jpg" alt="Driftwood">
+    </a>
+  
+    <a href="#" class="album-grid-item" data-caption="Blur: Digital photo">
+      <img src="/assets/img/photos/blur.jpg" alt="Blur">
+    </a>
+  
+</div>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2018-2025 Maximilian Götz</p>
+      <p><a href="/info/imprint">Impressum :: Imprint</a></p>
+      <p><a href="/info/privacy">Datenschutzerklärung :: Privacy Statement</a></p>
+    </footer>
+
+    <script src="/assets/js/javascript.js"></script>
+  </body>
+</html>
