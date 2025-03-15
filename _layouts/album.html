@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
+<h2>{{ page.title | xml_escape }}</h2>
 
 <div id="fullscreen-view" class="fullscreen">
   <div class="fullscreen-content">
@@ -18,8 +18,8 @@ layout: default
 
 <div class="album-grid">
   {% for photo in page.photos %}
-    <a href="#" class="album-grid-item" data-caption="{{ photo.title }}: {{ photo.details }}">
-      <img src="/assets/img/photos/{{ photo.file }}" alt="{{ photo.title }}">
+    <a href="#" class="album-grid-item" data-caption="{{ photo.title | xml_escape }}: {{ photo.details | xml_escape }}">
+      <img src="/assets/img/photos/{{ photo.file | xml_escape }}" alt="{{ photo.title | xml_escape }}">
     </a>
   {% endfor %}
 </div>
