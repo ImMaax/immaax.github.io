@@ -53,8 +53,9 @@ module Gallery
       @db.execute %Q(
       SELECT * FROM photos
       JOIN photos_albums ON photos.id = photos_albums.photo_id
-      WHERE photos_albums.album_id = #{album_id};
-      )
+      WHERE photos_albums.album_id = ?
+      ORDER BY photos_albums.position ASC;
+      ), [album_id]
     end
   end
 end
