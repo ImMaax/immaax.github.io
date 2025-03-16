@@ -2,23 +2,18 @@
 layout: default
 title: Home
 description: Welcome to the homepage of Maximilian Götz
-gallery:
-  - cold-winter-day.jpg
-  - yellow.jpg
-  - blur.jpg
-  - locked-lithed.jpg
-  - old-world.jpg
 ---
+
+{% fetch_gallery %}
 
 <div id="home-gallery-cont">
   <section id="home-gallery">
-    {% for photo in page.gallery %}
-      <img class="fade-image" src="/assets/img/photos/{{ photo }}" alt="Photo">
+    {% for photo in gallery %}
+      <img class="fade-image" src="/assets/img/photos/{{ photo[1] }}" alt="{{ photo[0] }}">
     {% endfor %}
   </section>
 </div>
 
-{% fetch_album_list %}
 <div class="album-grid">
   {% for album in albums %}
     <a href="/albums/{{ album[0] }}" class="album-grid-item">

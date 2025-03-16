@@ -1,15 +1,11 @@
 require "sqlite3"
 
 module Gallery
-  class FetchAlbumListTag < Liquid::Tag
-    def initialize(tag_name, text, tokens)
-      super
-      @db = Database.new
-      @albums = @db.albums_overview
-    end
-
+  class FetchGalleryTag < Liquid::Tag
     def render(context)
-      context["albums"] = @albums
+      db = Database.new
+      context["albums"] = db.albums_overview
+      context["gallery"] = db.gallery_overview
       ""
     end
   end
@@ -81,7 +77,15 @@ module Gallery
       LEFT JOIN photos ON albums.cover_photo_id = photos.id;
       )
     end
+
+    def gallery_overview
+      @db.execute %Q(
+      SELECT title, file FROM photos
+      JOIN gallery_photos ON photos.id = gallery_photos.photo_id
+      ORDER BY gallery_photos.position ASC;
+      )
+    end
   end
 end
 
-Liquid::Template.register_tag "fetch_album_list", Gallery::FetchAlbumListTag
+Liquid::Template.register_tag "fetch_gallery", Gallery::FetchGalleryTag
