@@ -1,7 +1,7 @@
 require "sqlite3"
 
 module Gallery
-  class RenderAlbumListTag < Liquid::Tag
+  class FetchAlbumListTag < Liquid::Tag
     def initialize(tag_name, text, tokens)
       super
       @db = Database.new
@@ -9,19 +9,8 @@ module Gallery
     end
 
     def render(context)
-      html = "<div class='album-grid'>"
-
-      @albums.each do |album|
-        html += %Q(
-        <a href="/albums/#{album[0]}" class="album-grid-item">
-          <img src="/assets/img/photos/#{album[2]}" alt="#{album[1]}">
-          <p>#{album[1]}</p>
-        </a>
-        )
-      end
-
-      html += "</div>"
-      html
+      context["albums"] = @albums
+      ""
     end
   end
 
@@ -95,4 +84,4 @@ module Gallery
   end
 end
 
-Liquid::Template.register_tag "render_album_list", Gallery::RenderAlbumListTag
+Liquid::Template.register_tag "fetch_album_list", Gallery::FetchAlbumListTag

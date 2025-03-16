@@ -18,4 +18,12 @@ gallery:
   </section>
 </div>
 
-{% render_album_list %}
+{% fetch_album_list %}
+<div class="album-grid">
+  {% for album in albums %}
+    <a href="/albums/{{ album[0] }}" class="album-grid-item">
+      <img src="/assets/img/photos/{{ album[2] }}" alt="{{ album[1] }}">
+      <p>{{ album[1] }}</p>
+    </a>
+  {% endfor %}
+</div>
