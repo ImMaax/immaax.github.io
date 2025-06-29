@@ -18,8 +18,13 @@ layout: default
 
 <div class="album-grid">
   {% for photo in page.photos %}
-    <a href="#" class="album-grid-item" data-caption="{{ photo.title | xml_escape }}: {{ photo.details | xml_escape }}">
-      <img src="/assets/img/photos/{{ photo.file | xml_escape }}" alt="{{ photo.title | xml_escape }}">
-    </a>
+    <div class="album-grid-item" data-caption="{{ photo.title | xml_escape }}: {{ photo.details | xml_escape }}">
+      <a href="#">
+        <div class="album-grid-item-frame">
+          <img src="/assets/img/photos/{{ photo.file | xml_escape }}" alt="{{ photo.title | xml_escape }}">
+          <p class="album-grid-item-caption">{{ photo.title | xml_escape }}</p>
+        </div>
+      </a>
+    </div>
   {% endfor %}
 </div>

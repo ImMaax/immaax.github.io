@@ -69,10 +69,27 @@ function prepareFullscreen() {
   })
 }
 
+function isWideScreen() {
+  return screen.width >= screen.height
+}
+
+function averageGridImageSize() {
+  let heights = []
+  const gridImages = document.querySelectorAll(".album-grid-item img")
+
+  gridImages.forEach(img => { heights.push(img.height) })
+  const average = heights.reduce((a, b) => a + b) / heights.length
+  gridImages.forEach(img => {
+    if (img.height > average) img.height = average
+  })
+}
+
 window.addEventListener("load", () => {
   const images = document.querySelectorAll(".fade-image")
   if (images.length > 0) galleryFade(images, 5)
 
   const fullscreen = document.querySelectorAll(".fullscreen")
   if (fullscreen.length > 0) prepareFullscreen()
+
+  if (isWideScreen()) averageGridImageSize()
 })

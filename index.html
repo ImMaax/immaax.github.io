@@ -9,16 +9,20 @@ description: Welcome to the homepage of Maximilian Götz
 <div id="home-gallery-cont">
   <section id="home-gallery">
     {% for photo in gallery %}
-      <img class="fade-image" src="/assets/img/photos/{{ photo[1] }}" alt="{{ photo[0] }}">
+      <img class="fade-image" src="/assets/img/photos/{{ photo[1] | xml_escape }}" alt="{{ photo[0] | xml_escape }}">
     {% endfor %}
   </section>
 </div>
 
 <div class="album-grid">
   {% for album in albums %}
-    <a href="/albums/{{ album[0] }}" class="album-grid-item">
-      <img src="/assets/img/photos/{{ album[2] }}" alt="{{ album[1] }}">
-      <p>{{ album[1] }}</p>
-    </a>
+    <div class="album-grid-item">
+      <a href="/albums/{{ album[0] | xml_escape }}">
+        <div class="album-grid-item-frame">
+          <img src="/assets/img/photos/{{ album[2] | xml_escape }}" alt="{{ album[1] | xml_escape }}">
+          <p class="album-grid-item-caption">{{ album[1] | xml_escape }}</p>
+        </div>
+      </a>
+    </div>
   {% endfor %}
 </div>
