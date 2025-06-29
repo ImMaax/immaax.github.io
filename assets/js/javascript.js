@@ -1,16 +1,3 @@
-function galleryFade(images, interval) {
-  let currentIndex = 0
-
-  function changeImage() {
-    images[currentIndex].classList.remove("active")
-    currentIndex = (currentIndex + 1) % images.length
-    images[currentIndex].classList.add("active")
-  }
-
-  images[currentIndex].classList.add("active")
-  setInterval(changeImage, interval * 1000)
-}
-
 function prepareFullscreen() {
   const gridItems = document.querySelectorAll(".album-grid-item")
   const fullscreenView = document.getElementById("fullscreen-view")
@@ -84,12 +71,28 @@ function averageGridImageSize() {
   })
 }
 
-window.addEventListener("load", () => {
-  const images = document.querySelectorAll(".fade-image")
-  if (images.length > 0) galleryFade(images, 5)
+function runSlideshow(slides) {
+  slides[0].classList.add("active")
+  let current = 0
 
+  function showNextSlide() {
+    slides[current].classList.remove("active")
+    current = (current + 1) % slides.length
+
+    setTimeout(() => {
+      slides[current].classList.add("active")
+    }, 500)
+  }
+
+  setInterval(showNextSlide, 4000)
+}
+
+window.addEventListener("load", () => {
   const fullscreen = document.querySelectorAll(".fullscreen")
   if (fullscreen.length > 0) prepareFullscreen()
 
   if (isWideScreen()) averageGridImageSize()
+
+  const slides = document.querySelectorAll(".gallery-slide")
+  if (slides.length > 0) runSlideshow(slides)
 })

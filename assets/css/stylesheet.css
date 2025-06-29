@@ -36,6 +36,11 @@ a:visited {
   color: var(--dark-blue);
 }
 
+ul {
+  list-style-type: square;
+  color: var(--dark-blue);
+}
+
 a[href^="http://"]:not([href*="goetz.pro"]):after,
 a[href^="https://"]:not([href*="goetz.pro"]):after {
   content: url("/assets/img/external.png");
@@ -65,37 +70,61 @@ hr {
  Homepage
 *******************************************************************************/
 
-#home-gallery {
-  width: 90%;
-  max-width: 350px;
-  aspect-ratio: 5 / 4;
-  overflow: hidden;
+#home-grid {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "text text gallery"
+    "albums albums albums"
+}
+
+#home-grid-text   { grid-area: text; }
+#home-grid-albums { grid-area: albums; }
+
+#home-grid-gallery {
+  grid-area: gallery;
+  padding: 2em;
+  margin-top: 1em;
+  margin-bottom: 10em;
+}
+
+.gallery {
   position: relative;
-  border: 15px solid var(--white);
-  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
 }
 
-#home-gallery-cont {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-
-.fade-image {
+.gallery-slide {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   opacity: 0;
-  transition: opacity 2s ease-in-out;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
 }
 
-.fade-image.active {
+.gallery-slide img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+.gallery-slide-caption {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.gallery-slide.active {
   opacity: 1;
+  pointer-events: all;
 }
 
 /*******************************************************************************
@@ -236,13 +265,22 @@ hr {
 }
 
 @media (max-width: 768px) {
-  #home-gallery {
-    width: 100%;
-    max-width: none;
-  }
-
   .album-grid {
     grid-template-columns: repeat(1, minmax(150px, 1fr));
+  }
+
+  #home-grid-text {
+    margin-top: 5em;
+  }
+
+  #home-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "gallery"
+      "text"
+      "albums";
   }
 }
 
