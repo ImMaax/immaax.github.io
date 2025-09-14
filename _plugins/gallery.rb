@@ -10,6 +10,25 @@ module Gallery
     end
   end
 
+  class PhotoPageGenerator < Jekyll::Generator
+    safe true
+
+    def generate(site)
+      db = Database.new
+      db.photos.each do |photo|
+        page = Jekyll::PageWithoutAFile.new(
+          site, site.source, "photos", "#{photo[4]}.html")
+
+        page.content = photo[3]
+        page.data["description"] = "Details for #{photo[1]}"
+        page.data["layout"] = "photo"
+        page.data["title"] = "Details for #{photo[1]}"
+        page.data["photo"] = Photo.new(photo[1], photo[2], photo[3], photo[4])
+        site.pages << page
+      end
+    end
+  end
+
   class AlbumPageGenerator < Jekyll::Generator
     safe true
 
@@ -25,7 +44,7 @@ module Gallery
         page.data["photos"] = []
 
         db.photos_in_album(album[0]).each do |photo|
-          page.data["photos"] << Photo.new(photo[1], photo[2], photo[3])
+          page.data["photos"] << Photo.new(photo[1], photo[2], photo[3], photo[4])
         end
 
         site.pages << page
@@ -34,17 +53,19 @@ module Gallery
   end
 
   class Photo
-    def initialize(title, file, details)
+    def initialize(title, file, details, url_id)
       @title = title
       @file = file
       @details = details
+      @url_id = url_id
     end
 
     def to_liquid
       {
         "title" => @title,
         "file" => @file,
-        "details" => @details
+        "details" => @details,
+        "url_id" => @url_id
       }
     end
   end
@@ -56,6 +77,10 @@ module Gallery
 
     def albums
       @db.execute "SELECT * FROM albums"
+    end
+
+    def photos
+      @db.execute "SELECT * FROM photos"
     end
 
     def photos_in_album(album_id)

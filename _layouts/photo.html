@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<h2>{{ page.title | xml_escape }}</h2>
+
+<div class="photo-detail-view">
+  <div class="album-grid-item-frame">
+    <img src="/assets/img/photos/{{ page.photo.file }}"
+         alt="{{ page.photo.title }}">
+  </div>
+</div><br>
+
+<h3>Technical Work Notes</h3>
+
+{{ content }}
