@@ -11,13 +11,20 @@ function prepareFullscreen() {
 
   const images = Array.from(gridItems).map(item => ({
     src: item.querySelector("img").src,
-    caption: item.getAttribute("data-caption")
+    caption: item.getAttribute("data-caption"),
+    urlId: item.getAttribute("data-url-id")
   }))
+
+  function updateCaption(image) {
+    let iLink = `<a href='/photos/${image.urlId}'>Technical Details</a>`
+    fullscreenCaption.innerHTML = image.caption + " &bull; " + iLink
+  }
 
   function openFullscreen(index) {
     currentIndex = index
+
     fullscreenImg.src = images[currentIndex].src
-    fullscreenCaption.textContent = images[currentIndex].caption
+    updateCaption(images[currentIndex])
     fullscreenView.classList.add("show")
   }
 
@@ -28,7 +35,7 @@ function prepareFullscreen() {
   function changeImage(direction) {
     currentIndex = (currentIndex + direction + images.length) % images.length
     fullscreenImg.src = images[currentIndex].src
-    fullscreenCaption.textContent = images[currentIndex].caption
+    updateCaption(images[currentIndex])
   }
 
   gridItems.forEach((item, index) => {
@@ -64,11 +71,13 @@ function averageGridImageSize() {
   let heights = []
   const gridImages = document.querySelectorAll(".album-grid-item img")
 
-  gridImages.forEach(img => { heights.push(img.height) })
-  const average = heights.reduce((a, b) => a + b) / heights.length
-  gridImages.forEach(img => {
-    if (img.height > average) img.height = average
-  })
+  if (gridImages.length > 0) {
+    gridImages.forEach(img => { heights.push(img.height) })
+    const average = heights.reduce((a, b) => a + b) / heights.length
+    gridImages.forEach(img => {
+      if (img.height > average) img.height = average
+    })
+  }
 }
 
 function runSlideshow(slides) {
