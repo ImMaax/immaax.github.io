@@ -55,6 +55,11 @@ hr {
   margin-bottom: 1em;
 }
 
+pre {
+  white-space: pre-wrap;
+  font-family: var(--font-serif);
+}
+
 .txt-img {
   float: right;
   max-width: 100%;
