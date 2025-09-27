@@ -79,7 +79,7 @@ hr {
 #home-grid {
   display: grid;
   grid-template-columns: auto 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
   grid-template-areas:
     "text text gallery"
     "albums albums albums"
