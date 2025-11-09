@@ -80,20 +80,31 @@ function averageGridImageSize() {
   }
 }
 
-function runSlideshow(slides) {
-  slides[0].classList.add("active")
-  let current = 0
+function runSlideshow(targetImg, targetDiv, paths) {
+  let cur = 0
+  showNextSlide()
 
-  function showNextSlide() {
-    slides[current].classList.remove("active")
-    current = (current + 1) % slides.length
-
-    setTimeout(() => {
-      slides[current].classList.add("active")
-    }, 500)
+  function fadeCurrentSlide() {
+    targetDiv.classList.add("hidden")
+  }
+  function revFadeCurrentSlide() {
+    targetDiv.classList.remove("hidden")
   }
 
-  setInterval(showNextSlide, 4000)
+  function showNextSlide() {
+    fadeCurrentSlide()
+
+    setTimeout(() => {
+      cur = (cur + 1) % paths.length
+      targetImg.src = "/assets/img/photos/" + paths[cur]
+    }, 500)
+
+    setTimeout(() => {
+      revFadeCurrentSlide()
+    }, 1000)
+  }
+
+  setInterval(showNextSlide, 6000)
 }
 
 window.addEventListener("load", () => {
@@ -102,6 +113,16 @@ window.addEventListener("load", () => {
 
   if (isWideScreen()) averageGridImageSize()
 
-  const slides = document.querySelectorAll(".gallery-slide")
-  if (slides.length > 0) runSlideshow(slides)
+  //const slides = document.querySelectorAll(".gallery-slide")
+  //if (slides.length > 0) runSlideshow(slides)
+  runSlideshow(
+    document.getElementById("gallery-img"),
+    document.getElementById("gallery-slide"),
+    [
+      "angels.jpg",
+      "moorish-castle.jpg",
+      "young-trees.jpg",
+      "light-upon-death.jpg"
+    ]
+  )
 })

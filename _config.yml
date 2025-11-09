@@ -7,3 +7,23 @@ domain: "goetz.pro"
 permalink: "/:categories/:title"
 plugins:
   - jekyll-sitemap
+
+homepage_photos:
+  - "light-upon-death.jpg"
+  - "young-trees.jpg"
+  - "angels.jpg"
+  - "moorish-castle.jpg"
+
+albums:
+  -
+    title: "Churches and Graveyards"
+    cover: "light-upon-death.jpg"
+    id: "churches-and-graveyards"
+  -
+    title: "Nordhessen, Germany"
+    cover: "young-trees.jpg"
+    id: "nordhessen"
+  -
+    title: "Portugal"
+    cover: "at-the-pier.jpg"
+    id: "portugal"
