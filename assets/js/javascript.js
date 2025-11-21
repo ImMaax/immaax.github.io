@@ -81,6 +81,7 @@ function averageGridImageSize() {
 }
 
 function runSlideshow(targetImg, targetDiv, paths) {
+  let isFirstRun = true
   let cur = 0
   showNextSlide()
 
@@ -92,12 +93,16 @@ function runSlideshow(targetImg, targetDiv, paths) {
   }
 
   function showNextSlide() {
-    fadeCurrentSlide()
+    if (!isFirstRun) {
+      fadeCurrentSlide()
 
-    setTimeout(() => {
-      cur = (cur + 1) % paths.length
-      targetImg.src = "/assets/img/photos/" + paths[cur]
-    }, 500)
+      setTimeout(() => {
+        cur = (cur + 1) % paths.length
+        targetImg.src = "/assets/img/photos/" + paths[cur]
+      }, 500)
+    } else {
+      isFirstRun = false
+    }
 
     setTimeout(() => {
       revFadeCurrentSlide()
