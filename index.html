@@ -7,21 +7,7 @@ description: Welcome to the homepage of Maximilian Götz
 <div class="gallery">
   <div id="gallery-slide">
     <div class="album-grid-item-frame">
-      <img id="gallery-img" src="/assets/img/photos/{{ site.homepage_photos[0] }}">
+      <img id="gallery-img" src="#" style="opacity: 0">
     </div>
   </div>
-</div>
-
-<br><h2>Projects, Albums and Collections</h2>
-<div class="album-grid">
-  {% for album in site.albums %}
-    <div class="album-grid-item">
-      <a href="/albums/{{ album.id | xml_escape }}">
-        <div class="album-grid-item-frame">
-          <img src="/assets/img/photos/{{ album.cover | xml_escape }}" alt="{{ album.title | xml_escape }}">
-          <p class="album-grid-item-caption">{{ album.title | xml_escape }}</p>
-        </div>
-      </a>
-    </div>
-  {% endfor %}
 </div>
