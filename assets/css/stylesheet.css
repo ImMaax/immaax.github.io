@@ -55,11 +55,6 @@ hr {
   margin-bottom: 1em;
 }
 
-pre {
-  white-space: pre-wrap;
-  font-family: var(--font-serif);
-}
-
 .txt-img {
   float: right;
   max-width: 100%;
@@ -71,101 +66,27 @@ pre {
   padding-right: 1em;
 }
 
-.photo-detail-view {
-  margin: auto auto;
-  display: block;
-  width: 50%;
-}
-
 /*******************************************************************************
  Homepage
 *******************************************************************************/
 
-#home-grid {
-  display: grid;
-  grid-template-columns: auto 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas:
-    "text text gallery"
-    "albums albums albums"
-}
-
-#home-grid-text   { grid-area: text; }
-#home-grid-albums { grid-area: albums; }
-
-#home-grid-gallery {
-  grid-area: gallery;
-  padding: 2em;
-  margin-top: 1em;
-  margin-bottom: 10em;
-}
-
 .gallery {
-  position: relative;
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  margin: 0 auto;
-}
-
-.gallery-slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  pointer-events: none;
-}
-
-.gallery-slide img {
-  max-width: 100%;
-  max-height: 80vh;
-  object-fit: contain;
-}
-
-.gallery-slide-caption {
-  margin-top: 1rem;
   text-align: center;
 }
 
-.gallery-slide.active {
+#gallery-slide {
+  display: inline-block;
   opacity: 1;
-  pointer-events: all;
+  transition: opacity 0.5s ease;
 }
 
-/*******************************************************************************
- Album Grid
-*******************************************************************************/
-
-.album-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 2rem;
-  padding: 1rem;
-  justify-items: center;
+#gallery-slide.hidden {
+  opacity: 0;
 }
 
-.album-grid-item {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.2s ease;
-}
-
-.album-grid-item:hover {
-  transform: translateY(-5px);
-}
-
-.album-grid-item a:link,
-.album-grid-item a:visited {
-  text-decoration: none;
-  color: var(--black);
+#gallery-img {
+  max-width: 100%;
+  max-height: 60vh;
 }
 
 .album-grid-item-frame {
@@ -185,126 +106,4 @@ pre {
 .album-grid-item-frame img {
   max-width: 100%;
   box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.25);
-}
-
-.album-grid-item-caption {
-  text-align: center;
-}
-
-/*******************************************************************************
- Fullscreen Photo Viewer
-*******************************************************************************/
-
-.fullscreen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.9);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.fullscreen.show {
-  opacity: 1;
-  visibility: visible;
-  transform: scale(1);
-}
-
-.fullscreen-content {
-  position: relative;
-  max-width: 90%;
-  max-height: 90%;
-  text-align: center;
-}
-
-#fullscreen-img {
-  max-width: 70%;
-  max-height: 70%;
-  margin-bottom: 10px;
-  object-fit: contain;
-  border: 10px solid white;
-}
-
-#fullscreen-caption {
-  color: var(--white);
-  margin-top: 5px;
-  font-size: 20px;
-}
-
-#close-btn {
-  position: absolute;
-  top: -36px;
-  right: 5px;
-  color: var(--white);
-  border: none;
-  width: 36px;
-  height: 36px;
-  cursor: pointer;
-  font-size: 36px;
-  text-align: center;
-  background: none;
-}
-
-.nav-btn {
-  background: none;
-  position: absolute;
-  top: 50%;
-  color: var(--white);
-  border: none;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  font-size: 28px;
-  line-height: 40px;
-  text-align: center;
-  transform: translateY(-50%);
-}
-
-#prev-btn {
-  left: -20px;
-}
-
-#next-btn {
-  right: -20px;
-}
-
-@media (max-width: 768px) {
-  .album-grid {
-    grid-template-columns: repeat(1, minmax(150px, 1fr));
-  }
-
-  #home-grid-text {
-    margin-top: 5em;
-  }
-
-  #home-grid {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-      "gallery"
-      "text"
-      "albums";
-  }
-}
-
-/* iPhone-specific alignment issues "hack"; TODO: android? */
-@media only screen
-and (max-width: 450px)
-and (-webkit-device-pixel-ratio: 3) {
-  #close-btn {
-    top: -40px;
-    right: -10px;
-  }
-
-  #next-btn {
-    right: 5px;
-  }
 }
