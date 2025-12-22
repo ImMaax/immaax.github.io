@@ -44,8 +44,8 @@ window.addEventListener("load", () => {
     [
       "bright-days.jpg",
       "light-upon-death.jpg",
-      "judgement.jpg",
-      "path-and-tree-lithed.jpg"
+      "jakobikirche.jpg",
+      "judgement.jpg"
     ]
   )
 })
