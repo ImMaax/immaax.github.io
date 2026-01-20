@@ -38,14 +38,13 @@ window.addEventListener("load", () => {
 
   if (!gImg || !gSlide) return
 
-  runSlideshow(
-    gImg,
-    gSlide,
-    [
-      "bright-days.jpg",
-      "light-upon-death.jpg",
-      "jakobikirche.jpg",
-      "judgement.jpg"
-    ]
-  )
+  fetch("/assets/img/gallery.json")
+    .then(res => {
+      if (!res.ok) {
+        throw new Error(`Error loading gallery! HTTP ${res.status}`);
+      }
+      return res.json()
+    })
+    .then(data => runSlideshow(gImg, gSlide, data))
+    .catch(err => alert(err))
 })
