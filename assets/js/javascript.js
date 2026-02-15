@@ -38,7 +38,7 @@ window.addEventListener("load", () => {
 
   if (!gImg || !gSlide) return
 
-  fetch("/assets/img/gallery.json")
+  fetch("/assets/img/gallery.json", { cache: "no-cache" })
     .then(res => {
       if (!res.ok) {
         throw new Error(`Error loading gallery! HTTP ${res.status}`);
