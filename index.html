@@ -11,3 +11,21 @@ description: Welcome to the homepage of Maximilian Götz
     </div>
   </div>
 </div>
+
+<div id="gallery-list">
+  <!-- <ul> -->
+  <!--   <li id="gallery-list-item" data-cover="entwined.jpg"><a href="#">Gallery</a></li> -->
+  <!--   <li id="gallery-list-item" data-cover="antiik-ii.jpg"><a href="#">Gallery</a></li> -->
+  <!--   <li id="gallery-list-item" data-cover="sinister.jpg"><a href="#">Gallery</a></li> -->
+  <!-- </ul> -->
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    bootHomepage(
+      document.getElementById("gallery-img"),
+      document.getElementById("gallery-slide"),
+      document.getElementById("gallery-list")
+    )
+  })
+</script>
