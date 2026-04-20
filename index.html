@@ -21,7 +21,7 @@
     <meta property="twitter:url" content="https://goetz.pro/">
 
     <!-- Link -->
-    <link rel="stylesheet" href="/assets/css/stylesheet.css?v=20260120">
+    <link rel="stylesheet" href="/assets/css/stylesheet.css?v=20260420">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
     <link rel="sitemap" type="application/xml" href="/sitemap.xml"
@@ -49,6 +49,24 @@
   </div>
 </div>
 
+<div id="gallery-list">
+  <!-- <ul> -->
+  <!--   <li id="gallery-list-item" data-cover="entwined.jpg"><a href="#">Gallery</a></li> -->
+  <!--   <li id="gallery-list-item" data-cover="antiik-ii.jpg"><a href="#">Gallery</a></li> -->
+  <!--   <li id="gallery-list-item" data-cover="sinister.jpg"><a href="#">Gallery</a></li> -->
+  <!-- </ul> -->
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    bootHomepage(
+      document.getElementById("gallery-img"),
+      document.getElementById("gallery-slide"),
+      document.getElementById("gallery-list")
+    )
+  })
+</script>
+
     </main>
 
     <footer>
@@ -64,6 +82,6 @@
       </div>
     </footer>
 
-    <script src="/assets/js/javascript.js?v=20260215"></script>
+    <script src="/assets/js/javascript.js?v=20260420"></script>
   </body>
 </html>
