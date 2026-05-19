@@ -68,6 +68,26 @@ a[href^="https://"]:not([href*="goetz.pro"]):after {
   vertical-align: middle;
 }
 
+a.cta-link {
+  display: inline-block;
+  font-style: italic;
+  font-size: 1.3em;
+  padding-left: 1em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+
+a.cta-link:before {
+  content: "› ";
+}
+
+details .d-content {
+  padding-left: 1.5em;
+  border-left: 1px solid var(--dark-blue);
+}
+
+summary {}
+
 .txt-img {
   float: right;
   max-width: 100%;
@@ -77,6 +97,47 @@ a[href^="https://"]:not([href*="goetz.pro"]):after {
   float: left;
   max-width: 10%;
   padding-right: 1em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "a b c"
+    "d e f"
+    "g h i"
+    "j j k";
+}
+
+#g-a { grid-area: a; }
+#g-b { grid-area: b; }
+#g-c { grid-area: c; }
+#g-d { grid-area: d; }
+#g-e { grid-area: e; }
+#g-f { grid-area: f; }
+#g-g { grid-area: g; }
+#g-h { grid-area: h; }
+#g-i { grid-area: i; }
+#g-j { grid-area: j; }
+#g-k { grid-area: k; }
+
+.grid-container div {
+  margin: 1em;
+  width: fit-content;
+  height: fit-content;
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    display: inline-block;
+  }
+
+  .grid-container div {
+    margin: 2em auto;
+    max-width: 600px;
+  }
 }
 
 /*******************************************************************************
