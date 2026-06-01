@@ -60,3 +60,14 @@ function bootHomepage(gImg, gSlide, gList) {
     })
   })
 }
+
+function autoFadeIn(elements) {
+  elements.forEach(el => {
+    el.classList.add("afi-hidden")
+
+    setTimeout(() => {
+      el.classList.remove("afi-hidden")
+      el.classList.add("afi-shown")
+    }, 250)
+  })
+}
