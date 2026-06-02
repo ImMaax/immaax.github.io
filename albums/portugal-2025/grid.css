@@ -1,43 +1,37 @@
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "a b c"
-    "d e f"
-    "g h i"
-    "j j k"
-    "m l l";
+h3 {
+  margin-top: 5rem;
+  text-align: center;
 }
 
-#g-a { grid-area: a; }
-#g-b { grid-area: b; }
-#g-c { grid-area: c; }
-#g-d { grid-area: d; }
-#g-e { grid-area: e; }
-#g-f { grid-area: f; }
-#g-g { grid-area: g; }
-#g-h { grid-area: h; }
-#g-i { grid-area: i; }
-#g-j { grid-area: j; }
-#g-k { grid-area: k; }
-#g-l { grid-area: l; }
-#g-m { grid-area: m; }
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
 
-.grid-container div {
-  margin: 1em;
-  width: fit-content;
-  height: fit-content;
+.grid div {
+  width: 15em;
+  object-fit: cover;
+}
+
+.grid div.wide {
+  width: 35em;
 }
 
 @media (max-width: 600px) {
-  .grid-container {
-    display: inline-block;
+  h3 {
+    margin-top: 1.5rem;
   }
 
-  .grid-container div {
-    margin: 2em auto;
-    max-width: 600px;
+  .grid {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+  }
+
+  .grid div,
+  .grid div.wide {
+    width: auto;
+    margin: 2rem auto;
   }
 }
