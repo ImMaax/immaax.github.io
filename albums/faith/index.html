@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home :: Maximilian Götz</title>
+    <title>Faith :: Maximilian Götz</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Welcome to the homepage of Maximilian Götz">
+    <meta name="description" content="Archive Photo Gallery: Faith">
     <meta property="og:site_name" content="Maximilian Götz">
-    <meta property="og:description" content="Welcome to the homepage of Maximilian Götz">
-    <meta property="og:title" content="Home :: Maximilian Götz">
+    <meta property="og:description" content="Archive Photo Gallery: Faith">
+    <meta property="og:title" content="Faith :: Maximilian Götz">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://goetz.pro/">
+    <meta property="og:url" content="https://goetz.pro/albums/faith/">
     <meta property="og:image" content="https://goetz.pro/assets/img/og-image.jpg?v=20260524">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Home :: Maximilian Götz">
-    <meta name="twitter:description" content="Welcome to the homepage of Maximilian Götz">
+    <meta name="twitter:title" content="Faith :: Maximilian Götz">
+    <meta name="twitter:description" content="Archive Photo Gallery: Faith">
     <meta name="twitter:image" content="https://goetz.pro/assets/img/twitter-image.jpg?v=20260524">
     <meta property="twitter:domain" content="goetz.pro">
-    <meta property="twitter:url" content="https://goetz.pro/">
+    <meta property="twitter:url" content="https://goetz.pro/albums/faith/">
 
     <!-- Link -->
     <link rel="stylesheet" href="/assets/css/stylesheet.css?v=20260601">
+    
+      <link rel="stylesheet" href="/albums/faith/grid.css?v=20260706">
     
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
@@ -42,36 +44,36 @@
         <p>Please enable JavaScript support or update your browser to fully
         experience this website.</p>
       </noscript>
-      <div class="gallery">
-  <div id="gallery-slide">
-    <div class="album-grid-item-frame">
-      <img id="gallery-img" src="#" style="opacity: 0">
-    </div>
+      <h2>Faith</h2>
+
+<div class="grid">
+  <div class="album-grid-item-frame" id="gallery-slide">
+    <img loading="lazy" alt="Photo" src="#">
   </div>
 </div>
 
-<div id="gallery-list">
-  <ul>
-    <li id="gallery-list-item" data-cover="angels.jpg">
-      <a href="albums/faith">Faith</a>
-    </li>
-    <li id="gallery-list-item" data-cover="alexander-nevsky-cathedral.jpg">
-      <a href="albums/northern-europe-2025">Northern Europe 2025/26</a>
-    </li>
-    <li id="gallery-list-item" data-cover="basilica-da-estrela.jpg">
-      <a href="albums/portugal-2025">Portugal 2025</a>
-    </li>
-  </ul>
+<div id="controlbox">
+  <a href="#" id="cb-prev">&lt; Previous</a>
+  <a href="#" id="cb-next">Next &gt;</a><br>
+  <span id="cb-info"></span>
 </div>
 
+<script src="/albums/faith/extra.js"></script>
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    bootHomepage(
-      document.getElementById("gallery-img"),
-      document.getElementById("gallery-slide"),
-      document.getElementById("gallery-list")
-    )
-  })
+  const gList = [
+    "angels.jpg",
+    "shepherd.jpg",
+    "chalice.jpg",
+    "gravestones.jpg",
+  ]
+
+  initGallery(
+    document.getElementById("gallery-slide"),
+    gList,
+    document.getElementById("cb-prev"),
+    document.getElementById("cb-next"),
+    document.getElementById("cb-info")
+  )
 </script>
 
     </main>
