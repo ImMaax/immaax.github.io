@@ -1,0 +1,23 @@
+---
+layout: default
+title: Home
+description: Welcome to the homepage of Maximilian Götz
+extra_css: "/assets/css/index.css"
+---
+
+<div class="gallery">
+  <div id="gallery-slide">
+    <div class="album-grid-item-frame">
+      <img id="gallery-img" src="#" style="opacity: 0">
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    bootHomepage(
+      document.getElementById("gallery-img"),
+      document.getElementById("gallery-slide"),
+      // document.getElementById("gallery-list")
+    )
+  })
+</script>

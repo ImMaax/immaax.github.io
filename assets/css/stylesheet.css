@@ -1,0 +1,177 @@
+:root {
+  --black: #343f50;
+  --dark-blue: #5b6f8d;
+  --white: #ffffff;
+  --gray: #fffdfa;
+
+  --font-serif:     Garamond, Baskerville, Baskerville Old Face, Hoefler Text,
+                    Times New Roman, serif;
+  --font-serif-alt: Hoefler Text, Times New Roman, serif;
+}
+
+html,
+body {
+  font-family: var(--font-serif);
+  color: var(--black);
+  padding: 5px;
+}
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+header h1 a:link,
+header h1 a:visited {
+  color: var(--black);
+  text-decoration: none;
+  font-weight: normal;
+  letter-spacing: 4px;
+  word-spacing: 5px;
+  font-variant: small-caps;
+}
+
+h1, h2, h3, h4, h5, h6, footer #copyright {
+  font-family: var(--font-serif-alt);
+}
+
+footer {
+  text-align: center;
+  padding-top: 2em;
+}
+
+footer #copyright {
+  letter-spacing: 2px;
+  font-variant: small-caps;
+  color: var(--dark-blue);
+}
+
+footer #links {
+  opacity: 50%;
+}
+
+a:link,
+a:visited {
+  color: var(--dark-blue);
+}
+
+a[href^="http://"]:not([href*="goetz.pro"]):after,
+a[href^="https://"]:not([href*="goetz.pro"]):after {
+  content: url("/assets/img/external.png");
+  vertical-align: unset;
+  padding-left: 2px;
+  vertical-align: middle;
+}
+
+.txt-img {
+  float: right;
+  max-width: 100%;
+}
+
+.txt-img-2 {
+  float: left;
+  max-width: 10%;
+  padding-right: 1em;
+}
+
+/*******************************************************************************
+ Auto Fade-In
+*******************************************************************************/
+
+.afi-hidden {
+  opacity: 0;
+}
+
+.afi-shown {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+/*******************************************************************************
+ Homepage
+*******************************************************************************/
+
+.gallery {
+  text-align: center;
+  height: 40vh;
+}
+
+#gallery-slide {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+#gallery-slide.hidden {
+  opacity: 0;
+}
+
+#gallery-img {
+  max-width: 40vh;
+  max-height: 40vh;
+}
+
+.album-grid-item-frame {
+  background: var(--gray);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.album-grid-item-frame img {
+  max-width: 100%;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Disabled feature */
+/* #gallery-list { */
+/*   text-align: center; */
+/*   margin-top: 3em; */
+/* } */
+
+/* #gallery-list ul { */
+/*   padding-left: 0; */
+/* } */
+
+/* #gallery-list-item { */
+/*   list-style: none; */
+/*   padding-top: 1em; */
+/*   padding-bottom: 1em; */
+/*   max-width: 300px; */
+/*   margin: 0 auto; */
+/*   transition: text-indent 0.2s; */
+/* } */
+
+/* #gallery-list-item:hover { */
+/*   text-indent: 5px; */
+/* } */
+
+/* #gallery-list-item a:link, */
+/* #gallery-list-item a:visited { */
+/*   text-decoration: none; */
+/* } */
+
+/* #gallery-list-item::after { */
+/*   display: block; */
+/*   content: " "; */
+/*   height: 1px; */
+/*   margin-top: 5px; */
+/*   background: linear-gradient( */
+/*     to right, */
+/*     transparent, */
+/*     var(--dark-blue) 15%, */
+/*     var(--dark-blue) 60%, */
+/*     transparent */
+/*   ); */
+/* } */
